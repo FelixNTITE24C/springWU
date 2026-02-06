@@ -1,0 +1,34 @@
+/* Index/Landingpage*/
+#index_body{
+    display: grid;
+    height: 97vh;
+    width: auto;
+    grid-template-areas: 
+    "index_header"
+    "index_nav"
+    "index_s1"
+    "index_s2";
+}
+
+#index_header{
+    grid-area: index_header;
+}
+
+#index_nav{
+    grid-area: index_nav;
+}
+
+#index_s1{
+    grid-area: index_s1;
+}
+
+#inde_s2{
+    grid-area: index_s2;
+}
+
+.border{
+    border: 1px solid black;
+}
+/* Roles/Unit Role Explinations*/
+
+/* Factions/Faction Units Roles*/
