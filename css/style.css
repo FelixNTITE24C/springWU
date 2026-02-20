@@ -8,14 +8,20 @@
     "index_nav"
     "index_s1"
     "index_s2";
+    grid-template-columns: auto;
+    grid-template-rows: 13% 5% 31% 31%;
 }
 
 #index_header{
     grid-area: index_header;
+    text-align: center;
 }
 
 #index_nav{
     grid-area: index_nav;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 #index_s1{
@@ -30,5 +36,28 @@
     border: 1px solid black;
 }
 /* Roles/Unit Role Explinations*/
+#roles_body{
+    display: grid;
+    height: 97vh;
+    width: auto;
+    grid-template-areas: 
+    "roles_header"
+    "roles_s1"
+    "roles_s2";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
 
+.roles_section{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#roles_s1{
+    grid-area: roles_s1;    
+}
+
+#roles_s2{
+    grid-area: roles_s2;
+}
 /* Factions/Faction Units Roles*/
