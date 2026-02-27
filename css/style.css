@@ -1,4 +1,8 @@
 /* Index/Landingpage*/
+@media (max-width: 500px){
+
+}
+
 #index_body{
     display: grid;
     height: 97vh;
@@ -28,7 +32,7 @@
     grid-area: index_s1;
 }
 
-#inde_s2{
+#index_s2{
     grid-area: index_s2;
 }
 
@@ -36,6 +40,16 @@
     border: 1px solid black;
 }
 /* Roles/Unit Role Explinations*/
+@media (max-width: 500px){
+
+}
+
+@media (min-width: 500px){
+    .menu-button{
+        display: none;
+    }
+}
+
 #roles_body{
     display: grid;
     height: 97vh;
@@ -45,12 +59,17 @@
     "roles_s1"
     "roles_s2";
     grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: 12vh;
 }
 
 .roles_section{
     display: grid;
     grid-template-rows: auto;
+}
+
+#roles_header{
+    grid-area: roles_header;
+    text-align: center;
 }
 
 #roles_s1{
@@ -61,3 +80,38 @@
     grid-area: roles_s2;
 }
 /* Factions/Faction Units Roles*/
+@media (max-width: 500px){
+
+}
+
+@media (min-width: 500px){
+    .menu-button{
+        display: none;
+    }
+}
+
+#factions_body{
+    display: grid;
+    height: 97vh;
+    width: auto;
+    grid-template-areas: 
+    "factions_header"
+    "factions_s1"
+    "factions_s2";
+    grid-template-columns: auto;
+    grid-template-rows: 16vh;
+}
+
+#factions_header{
+    text-align: center;
+}
+/* Example Armies*/
+@media (max-width: 500px){
+
+}
+
+@media (min-width: 500px){
+    .menu-button{
+        display: none;
+    }
+}
