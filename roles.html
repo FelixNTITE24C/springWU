@@ -5,25 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <script src="main.js"></script> 
+
   <title>Unit Roles</title>
 </head>
-<body id="roles_body">
+<body>
+  <nav class="menu">
+    <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Roles</a></li>
+    </ul>
+  </nav>
 
-  <header class="border" id="roles_header">
-    <h1 id="roles_header">Felix' Warhammer List Building Guide - Roles</h1>
-  </header>
+  <div class="fade-layer" onclick="showMenu()"></div>
+  
+  <div class="menu-button" onclick="showMenu()">
+      <i class="material-icons">menu</i>
+  </div>
+  <wrapper id="roles_wrapper">
+ 
+    <header class="border" id="roles_header">
+      <a href="index.html">
+        <h1 id="roles_header">Felix' Warhammer List Building Guide</h1>
+      </a>
+      <h1>- Roles -</h1>
+   </header>
 
-  <nav></nav>
+    <article class="border" class="roles_article" id="roles_s1">
+      <h2>Punchback</h2>
+      <img class="border">
+      <p>article one paragraph</p>
+    </article>
 
-  <section class="border" class="roles_section" id="roles_s1">
-    <img class="border">
-    <p class="border">Section one paragraph</p>
-  </section>
+    <article class="border" class="roles_article" id="roles_s2">
+      <h2>Punchback</h2>
+      <img class="border">
+      <p>article two paragraph</p>
+    </article>
 
-  <section class="border" class="roles_section" id="roles_s2">
-    <img class="border">
-    <p class="border">Section two paragraph</p>
-  </section>
+    <article class="border" class="roles_article" id="roles_s3">
+      <h2>Punchback</h2>
+      <img class="border">
+      <p>article three paragraph</p>
+    </article>
 
+    <article class="border" class="roles_article" id="roles_s4">
+      <h2>Punchback</h2>
+      <img class="border">
+      <p>article four paragraph</p>
+    </article>
+
+    <article class="border" class="roles_article" id="roles_s5">
+      <h2>Punchback</h2>
+      <img class="border">
+      <p>article five paragraph</p>
+    </article>
+
+  </wrapper>
+<script src="js/main.js"></script>
 </body>
 </html>
