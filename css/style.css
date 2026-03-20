@@ -20,7 +20,9 @@ a{
 .menu{
     height: 100vh;
     width: 80vw;
-    background: hotpink;
+    background: white;
+    border: 1px solid black;
+    border-radius: 0cm 1cm 1cm 0cm;
     position: fixed;
     top: 0;
     left: -90vw;
@@ -73,13 +75,14 @@ a{
     "index_s1"
     "index_s2";
     grid-template-columns: auto;
-    grid-template-rows: 13% 5% 31% 31%;
+    align-content: start;
 }
 
 
 #index_header{
     grid-area: index_header;
     text-align: center;
+    height: fit-content;
 }
 
 #index_nav{
@@ -115,7 +118,7 @@ a{
     "roles_s4"
     "roles_s5";
     grid-template-columns: auto;
-    grid-template-rows: 18vh;
+    align-content: start;
 }
 
 .roles_article{
@@ -154,7 +157,7 @@ a{
     "factions_s1"
     "factions_s2";
     grid-template-columns: auto;
-    grid-template-rows: 18vh;
+    align-content: start;
 }
 
 #factions_header{
@@ -180,7 +183,7 @@ a{
     "examples_introduction"
     "examples_armies";
     grid-template-columns: auto;
-    grid-template-rows: 23vh 74vh;
+    align-content: start;
 }
 
 #examples_introduction{
