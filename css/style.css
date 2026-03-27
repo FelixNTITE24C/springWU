@@ -11,15 +11,10 @@ a{
 
 /* Menu */
 
-@media (min-width: 500px){
-    .menu-button{
-        display: none;
-    }
-}
 
 .menu{
     height: 100vh;
-    width: 80vw;
+    width: 50vw;
     background: white;
     border: 1px solid black;
     border-radius: 0cm 1cm 1cm 0cm;
@@ -34,6 +29,9 @@ a{
 .menu-button{
     cursor: pointer;
     display: inline;
+    position: fixed;
+    background-color: white;
+    border-radius: 0cm 0.25cm 0.25cm 0cm;
 }
 
 .menu-button i.material-icons{
@@ -59,11 +57,16 @@ a{
     display: block;
 }
 
+@media (min-width: 500px){
+    .menu{
+        width: 25vw;
+    }    
+    .menu-button{
+        size-adjust: 100%;
+    }
+}
 
 /* Index/Landingpage*/
-@media (max-width: 500px){
-
-}
 
 #index_body{
     display: grid;
@@ -100,16 +103,21 @@ a{
     grid-area: index_s2;
 }
 
-/* Roles/Unit Role Explinations*/
-@media (max-width: 500px){
-
+@media (min-width: 600px){
+    #index_body{
+        padding-left: 20%; 
+        padding-right: 20%;
+    }
 }
+
+/* Roles/Unit Role Explinations*/
 
 
 #roles_wrapper{
+    padding-top: 15px;
     display: grid;
-    height: 97vh;
     width: auto;
+    height: auto;
     grid-template-areas: 
     "roles_header"
     "roles_s1"
@@ -138,17 +146,18 @@ a{
 #roles_s2{
     grid-area: roles_s2;
 }
+@media (min-width: 600px){
+    #roles_wrapper{
+        padding-left: 20%; 
+        padding-right: 20%;
+    }
+}
+
 /* Factions/Faction Units Roles*/
 
-@media screen and (max-width: 600px) {
-
-}
-
-@media screen and (max-width: 600px) {
-
-}
 
 #factions_wrapper{
+    padding-top: 15px;
     display: grid;
     height: 97vh;
     width: auto;
@@ -164,18 +173,21 @@ a{
     text-align: center;
 }
 
-/* Example Armies*/
 @media (max-width: 500px){
 
 }
 
 @media (min-width: 500px){
-    .menu-button{
-        display: none;
+    #factions_wrapper{
+        padding-left: 20%; 
+        padding-right: 20%;
     }
 }
 
+/* Example Armies*/
+
 #examples_wrapper{
+    padding-top: 15px;
     display: grid;
     height: 97vh;
     width: auto;
@@ -196,4 +208,15 @@ a{
     height: auto;
     height: 97vh;
     width: auto;
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (min-width: 600px) {
+    #examples_wrapper{
+        padding-left: 20%; 
+        padding-right: 20%;
+    }
 }
