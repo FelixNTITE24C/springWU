@@ -1,20 +1,64 @@
 /* Misc */
 
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap');
+
+:root {
+    /* Core Colors */
+    --void-black: #050708;
+    --gauss-green: #00dc37;
+    --tesseract-glow: #adff2f;
+    --leadbelcher: #4a4e52;
+    --iron-grey: #1a1d20;
+    --off-white: #e0e0e0;
+  
+    /* Semantic UI Colors */
+    --bg-main: var(--void-black);
+    --bg-surface: var(--iron-grey); /* För kort och paneler */
+    
+    --text-primary: var(--off-white);
+    --text-accent: var(--gauss-green);
+    
+    --border-metal: var(--leadbelcher);
+    --border-glow: var(--gauss-green);
+  
+    /* Interactive / States */
+    --cta-bg: var(--gauss-green);
+    --cta-text: var(--void-black);
+    --shadow-glow: 0 0 15px rgba(0, 255, 65, 0.4);
+}
+
 a{
     text-decoration: none;
-    color: black;
+    color: var(--gauss-green);
 }
 
 .border{
-    border: 1px solid black;
+    border: 3px solid var(--border-metal);
+    box-shadow: 0px 0px 4px 4px var(--border-glow);
+    background-color: var(--iron-grey);
+}
+
+body{
+    background-color: var(--void-black);
+}
+
+.text_color{
+    color: var(--text-primary);
+    accent-color: var(--text-accent);
+    font-family: Rajdhani;
 }
 
 /* Menu */
 
+@media (min-width: 500px){
+    .menu-button{
+        display: none;
+    }
+}
 
 .menu{
     height: 100vh;
-    width: 50vw;
+    width: 80vw;
     background: white;
     border: 1px solid black;
     border-radius: 0cm 1cm 1cm 0cm;
@@ -29,13 +73,13 @@ a{
 .menu-button{
     cursor: pointer;
     display: inline;
+}
+
+.menu-button img.material-icons{
+    width: 9%;
     position: fixed;
     background-color: white;
     border-radius: 0cm 0.25cm 0.25cm 0cm;
-}
-
-.menu-button i.material-icons{
-    font-size: 2.5rem;
 }
 
 .show{
@@ -57,16 +101,9 @@ a{
     display: block;
 }
 
-@media (min-width: 500px){
-    .menu{
-        width: 25vw;
-    }    
-    .menu-button{
-        size-adjust: 100%;
-    }
-}
 
 /* Index/Landingpage*/
+
 
 #index_body{
     display: grid;
@@ -77,8 +114,9 @@ a{
     "index_nav"
     "index_s1"
     "index_s2";
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     align-content: start;
+    row-gap: 2.5vh;
 }
 
 
@@ -92,32 +130,37 @@ a{
     grid-area: index_nav;
     display: flex;
     justify-content:space-evenly;
-    align-items: center;
+    align-items:center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 #index_s1{
     grid-area: index_s1;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 #index_s2{
     grid-area: index_s2;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
-@media (min-width: 600px){
-    #index_body{
-        padding-left: 20%; 
-        padding-right: 20%;
-    }
+@media (min-width: 500px){
+#index_body{
+    padding-left: 15%;
+    padding-right: 15%;
+    row-gap: 4vh;
 }
-
+}
 /* Roles/Unit Role Explinations*/
 
 
 #roles_wrapper{
-    padding-top: 15px;
     display: grid;
+    height: 97vh;
     width: auto;
-    height: auto;
     grid-template-areas: 
     "roles_header"
     "roles_s1"
@@ -146,18 +189,19 @@ a{
 #roles_s2{
     grid-area: roles_s2;
 }
-@media (min-width: 600px){
+
+@media (min-width: 500px){
+    .menu-button{
+        display: none;
+    }
     #roles_wrapper{
-        padding-left: 20%; 
-        padding-right: 20%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
-
 /* Factions/Faction Units Roles*/
 
-
 #factions_wrapper{
-    padding-top: 15px;
     display: grid;
     height: 97vh;
     width: auto;
@@ -173,21 +217,23 @@ a{
     text-align: center;
 }
 
-@media (max-width: 500px){
-
+@media screen and (min-width: 500px) {
+    .menu-button{
+        display: none;
+    }
+    #factions_wrapper{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 }
 
-@media (min-width: 500px){
-    #factions_wrapper{
-        padding-left: 20%; 
-        padding-right: 20%;
-    }
+@media screen and (max-width: 500px) {
+
 }
 
 /* Example Armies*/
 
 #examples_wrapper{
-    padding-top: 15px;
     display: grid;
     height: 97vh;
     width: auto;
@@ -210,13 +256,16 @@ a{
     width: auto;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 500px){
 
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 500px){
+    .menu-button{
+        display: none;
+    }
     #examples_wrapper{
-        padding-left: 20%; 
-        padding-right: 20%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
