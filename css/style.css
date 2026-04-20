@@ -30,12 +30,13 @@
 a{
     text-decoration: none;
     color: var(--gauss-green);
+    font-family: VT323;
 }
 
 .border{
     border: 3px solid var(--border-metal);
     box-shadow: 0px 0px 4px 4px var(--border-glow);
-    background-color: var(--iron-grey);
+    background-color: var(--bg-surface);
 }
 
 body{
@@ -45,7 +46,7 @@ body{
 .text_color{
     color: var(--text-primary);
     accent-color: var(--text-accent);
-    font-family: Rajdhani;
+    font-family: VT323;
 }
 
 /* Menu */
@@ -59,8 +60,8 @@ body{
 .menu{
     height: 100vh;
     width: 80vw;
-    background: white;
-    border: 1px solid black;
+    border: 3px solid var(--border-metal);
+    background-color: var(--bg-surface);
     border-radius: 0cm 1cm 1cm 0cm;
     position: fixed;
     top: 0;
@@ -139,12 +140,14 @@ body{
     grid-area: index_s1;
     padding-top: 1vh;
     padding-bottom: 1vh;
+    text-align: center;
 }
 
 #index_s2{
     grid-area: index_s2;
     padding-top: 1vh;
     padding-bottom: 1vh;
+    text-align: center;
 }
 
 @media (min-width: 500px){
@@ -159,7 +162,7 @@ body{
 
 #roles_wrapper{
     display: grid;
-    height: 97vh;
+    height: auto;
     width: auto;
     grid-template-areas: 
     "roles_header"
@@ -168,8 +171,9 @@ body{
     "roles_s3"
     "roles_s4"
     "roles_s5";
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     align-content: start;
+    row-gap: 25px;
 }
 
 .roles_article{
@@ -203,14 +207,15 @@ body{
 
 #factions_wrapper{
     display: grid;
-    height: 97vh;
+    height: auto;
     width: auto;
     grid-template-areas: 
     "factions_header"
     "factions_s1"
     "factions_s2";
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     align-content: start;
+    row-gap: 25px;
 }
 
 #factions_header{
@@ -240,8 +245,9 @@ body{
     grid-template-areas: 
     "examples_introduction"
     "examples_armies";
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     align-content: start;
+    row-gap: 25px;
 }
 
 #examples_introduction{
@@ -254,6 +260,10 @@ body{
     height: auto;
     height: 97vh;
     width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    row-gap: 25px;
 }
 
 @media (max-width: 500px){
