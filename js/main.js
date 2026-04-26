@@ -241,3 +241,243 @@ function moveTyranids(direction) {
     tyranidsCurrent = (tyranidsCurrent + direction + tyranidsSlides.length) % tyranidsSlides.length;
     tyranidsSlides[tyranidsCurrent].classList.add('active');
 }
+
+// Examples
+
+// Accordions
+// --- 1. Ultramarines Champion ---
+function toggleTop1() {
+    var item = document.getElementById('top_ultramarines');
+    var icon = document.getElementById('top1_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- 2. Chaos Space Marines Runner-up ---
+function toggleTop2() {
+    var item = document.getElementById('top_csm');
+    var icon = document.getElementById('top2_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- 3. Necrons Top 3 ---
+function toggleTop3() {
+    var item = document.getElementById('top_necrons');
+    var icon = document.getElementById('top3_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+function toggleSpace_Marines(){
+    var item = document.getElementById('space_marines_army');
+    var icon = document.getElementById('space_marines_icon');
+
+    item.classList.toggle('open');
+
+    if (item.classList.contains('open')){
+        icon.textContent = '-';
+    } else {
+        icon.textContent = '+';
+    }
+}
+
+// --- Black Templars ---
+function toggleBlack_Templars() {
+    var item = document.getElementById('Black_Templars_army');
+    var icon = document.getElementById('black_templars_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Blood Angels ---
+function toggleBlood_Angels() {
+    var item = document.getElementById('Blood_Angels_army');
+    var icon = document.getElementById('blood_angels_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Dark Angels ---
+function toggleDark_Angels() {
+    var item = document.getElementById('Dark_Angels_army');
+    var icon = document.getElementById('dark_angels_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Grey Knights ---
+function toggleGrey_Knights() {
+    var item = document.getElementById('Grey_Knights_army');
+    var icon = document.getElementById('grey_knights_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Space Wolves ---
+function toggleSpace_Wolves() {
+    var item = document.getElementById('Space_Wolves_army');
+    var icon = document.getElementById('space_wolves_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Adepta Sororitas ---
+function toggleSororitas() {
+    var item = document.getElementById('Sororitas_army');
+    var icon = document.getElementById('sororitas_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Adeptus Custodes ---
+function toggleCustodes() {
+    var item = document.getElementById('Custodes_army');
+    var icon = document.getElementById('custodes_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Adeptus Mechanicus ---
+function toggleMechanicus() {
+    var item = document.getElementById('Mechanicus_army');
+    var icon = document.getElementById('mechanicus_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Astra Militarum ---
+function toggleAstra_Militarum() {
+    var item = document.getElementById('Astra_Militarum_army');
+    var icon = document.getElementById('astra_militarum_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Imperial Agents ---
+function toggleImperial_Agents() {
+    var item = document.getElementById('Imperial_Agents_army');
+    var icon = document.getElementById('imperial_agents_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Imperial Knights ---
+function toggleImperial_Knights() {
+    var item = document.getElementById('Imperial_Knights_army');
+    var icon = document.getElementById('imperial_knights_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Chaos Daemons ---
+function toggleChaos_Demons() {
+    var item = document.getElementById('Chaos_Demons_army');
+    var icon = document.getElementById('chaos_demons_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Chaos Knights ---
+function toggleChaos_Knights() {
+    var item = document.getElementById('Chaos_Knights_army');
+    var icon = document.getElementById('chaos_knights_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Chaos Space Marines ---
+function toggleChaos_Space_Marines() {
+    var item = document.getElementById('Chaos_Space_Marines_army');
+    var icon = document.getElementById('chaos_space_marines_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Death Guard ---
+function toggleDeath_Guard() {
+    var item = document.getElementById('Death_Guard_army');
+    var icon = document.getElementById('death_guard_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Emperor's Children ---
+function toggleEmperors_Children() {
+    var item = document.getElementById('Emperors_Children_army');
+    var icon = document.getElementById('emperors_children_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Thousand Sons ---
+function toggleThousand_Sons() {
+    var item = document.getElementById('Thousand_Sons_army');
+    var icon = document.getElementById('thousand_sons_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- World Eaters ---
+function toggleWorld_Eaters() {
+    var item = document.getElementById('World_Eaters_army');
+    var icon = document.getElementById('world_eaters_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Aeldari ---
+function toggleAeldari() {
+    var item = document.getElementById('Aeldari_army');
+    var icon = document.getElementById('aeldari_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Genestealer Cults ---
+function toggleGenestealer_Cults() {
+    var item = document.getElementById('Genestealer_Cults_army');
+    var icon = document.getElementById('genestealer_cults_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Leagues of Votann ---
+function toggleVotann() {
+    var item = document.getElementById('Votann_army');
+    var icon = document.getElementById('votann_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Necrons ---
+function toggleNecrons() {
+    var item = document.getElementById('Necrons_army');
+    var icon = document.getElementById('necrons_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Orks ---
+function toggleOrks() {
+    var item = document.getElementById('Orks_army');
+    var icon = document.getElementById('orks_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- T'au Empire ---
+function toggleTau() {
+    var item = document.getElementById('Tau_army');
+    var icon = document.getElementById('tau_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}
+
+// --- Tyranids ---
+function toggleTyranids() {
+    var item = document.getElementById('Tyranids_army');
+    var icon = document.getElementById('tyranids_icon');
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? '-' : '+';
+}

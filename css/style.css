@@ -1,6 +1,6 @@
 /* Misc */
 
-@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap');
 
 :root {
     /* Core Colors */
@@ -48,6 +48,11 @@ body{
     accent-color: var(--text-accent);
     font-family: VT323;
     padding: 2%;
+}
+
+li{
+    padding: 20px;
+    list-style:none;
 }
 
 /* Menu */
@@ -112,13 +117,14 @@ body{
     height: auto;
     width: auto;
     grid-template-areas: 
-    "index_header"
-    "index_nav"
-    "index_s1"
-    "index_s2";
+    "index_header index_header index_header"
+    "index_nav index_nav index_nav"
+    "index_s1 index_s1 index_img1"
+    "index_img2 index_s2 index_s2";
     grid-template-columns: 1fr;
     align-content: start;
     row-gap: 2.5vh;
+    column-gap: 25px;
 }
 
 
@@ -143,10 +149,18 @@ body{
     padding-bottom: 1vh;
 }
 
+#index_img1{
+    grid-area: index_img1;
+}
+
 #index_s2{
     grid-area: index_s2;
     padding-top: 1vh;
     padding-bottom: 1vh;
+}
+
+#index_img2{
+    grid-area: index_img2;
 }
 
 @media (min-width: 500px){
@@ -155,6 +169,10 @@ body{
     padding-right: 15%;
     row-gap: 4vh;
 }
+}
+
+@media (max-width: 500px){
+
 }
 /* Roles/Unit Role Explinations*/
 
@@ -165,6 +183,7 @@ body{
     width: auto;
     grid-template-areas: 
     "roles_header"
+    "roles_nav"
     "roles_s1"
     "roles_s2"
     "roles_s3"
@@ -173,6 +192,15 @@ body{
     grid-template-columns: 1fr;
     align-content: start;
     row-gap: 25px;
+}
+
+#roles_nav{
+    grid-area: roles_nav;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .roles_article{
@@ -200,6 +228,12 @@ body{
     #roles_wrapper{
         padding-left: 15%;
         padding-right: 15%;
+    }
+}
+
+@media (max-width: 500px){
+    #roles_nav{
+        display: none;
     }
 }
 /* Factions/Faction Units Roles*/
@@ -259,11 +293,21 @@ body{
     width: auto;
     grid-template-areas: 
     "factions_header"
+    "factions_nav"
     "factions_s1"
     "factions_s2";
     grid-template-columns: 1fr;
     align-content: start;
     row-gap: 25px;
+}
+
+#factions_nav{
+    grid-area: factions_nav;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 #factions_header{
@@ -289,9 +333,47 @@ body{
         width: 100%;
         height: 200px;
     }
+
+    #factions_nav{
+        display: none;
+    }
 }
 
 /* Example Armies*/
+
+.icon{
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.accordion-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease
+}
+
+.accordion-item.open .accordion-body{
+    max-height: 100%;
+}
+
+.examples_button{
+    color: var(--text-primary);
+    accent-color: var(--text-accent);
+    background-color: var(--bg-surface);
+    display: flex;
+    justify-content: space-evenly;
+    font-family: VT323;
+    font-size: 150%;
+    width: 100%;
+    background: none;
+    border: none;
+}
 
 #examples_wrapper{
     display: grid;
@@ -305,9 +387,20 @@ body{
     row-gap: 25px;
 }
 
+#examples_nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
 #examples_introduction{
     grid-area: examples_introduction;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .sub_title{
@@ -315,18 +408,13 @@ body{
 }
 
 #example_armies{
-    grid-area: examples_armies;
-    height: auto;
-    height: auto;
-    width: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: start;
-    row-gap: 25px;
+
 }
 
 @media (max-width: 500px){
-
+    #examples_nav{
+        display: none;
+    }
 }
 
 @media (min-width: 500px){

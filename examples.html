@@ -31,150 +31,208 @@
         </a>
         <h1>- Example Armies -</h1>
       </header>
+      <nav class="border" id="examples_nav">
+        <a href="http://127.0.0.1:5501/index.html">Home</a>
+        <a href="http://127.0.0.1:5501/roles.html">Unit Roles</a>
+        <a href="http://127.0.0.1:5501/factions.html">Faction Unit Roles</a>
+       </nav>
       <footer id="examples footer" class="border text_color">Here you will find the top three winning army lists aswell as some examples for each faction.</footer>
     </section>
-    <section id="example_armies">
+    <section id="example_armies" class="accordion">
 
       <h2 class="text_color sub_title">- Top 3 -</h2>
 
-      <article id="top1" class="border text_color">
-        <p>1. Space Marines: Blade of Ultramar<br>
-          Winning List: Conan Jennings (AdeptiCon 2026 Champion, 9-0-0)</p>
-          
+      <article id="top_ultramarines" class="accordion-item border text_color">
+        <button onclick="toggleTop1()" class="examples_button">
+          1. Space Marines: Blade of Ultramar (AdeptiCon 2026 Champion)
+          <span class="icon" id="top1_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Winning List: Conan Jennings (9-0-0)</p>
           <p>The Ultramarines have pivoted away from the traditional "Calgar Castle" toward a high-mobility, high-pressure list that exploits the Gladius Task Force or the new Blade of Ultramar detachment.</p>
           
           <p>Why it's powerful: It has the best "Action Economy" in the game. With the ability to Advance and Charge or Fall Back and Shoot, they are never pinned down.</p>
           
           <p>Unit Roles:</p>
-          
           <p>Leader: Marneus Calgar (Terminator Armor). He generates extra CP and provides incredible melee punch to a Terminator brick.</p>
-          
           <p>Objective Holders: Heavy Intercessors. T6 and 3 wounds make them a nightmare to shift from the home objective.</p>
-          
           <p>Trade Units: Assault Intercessors with Jump Packs. Fast, cheap, and capable of killing a unit twice their cost before dying.</p>
-          
           <p>Anti-Tank: Gladiator Lancer. The most efficient long-range AT in the game due to its built-in rerolls.</p>
-          
           <p>Secondary Scorers: Inceptors. Their 3" deep strike allows them to score "Behind Enemy Lines" or "Deploy Teleport Homers" anywhere on the board.</p>
-          
           <p>Punchback: Brutalis Dreadnought. If an enemy charges your front line, this is the unit that crashes in next turn to wipe them out.</p>
-          
           <p>Anvil: Terminator Squad (10-man). Combined with a Librarian for Sustained Hits, they sit in the center and simply refuse to die.</p>
-          
-          <p>Transport: Impulsor. Used to ferry small squads of Hellblasters or Company Heroes to mid-board safely.<p/>
+          <p>Transport: Impulsor. Used to ferry small squads of Hellblasters or Company Heroes to mid-board safely.</p>
+        </div>
       </article>
-      <article id="top2" class="border text_color">
-        <p>2. Chaos Space Marines: Renegade Raiders<br>
-          Winning List: Brian Daugherty (AdeptiCon Runner-up, 8-1-0)</p>
-          
+
+      <article id="top_csm" class="accordion-item border text_color">
+        <button onclick="toggleTop2()" class="examples_button">
+          2. Chaos Space Marines: Renegade Raiders (AdeptiCon Runner-up)
+          <span class="icon" id="top2_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Winning List: Brian Daugherty (8-1-0)</p>
           <p>This list focuses on the Renegade Raiders detachment, which grants extra AP and movement speed when targeting enemies on objectives.</p>
           
           <p>Why it's powerful: It is arguably the fastest army in the game. It uses "Scout" moves and "Dark Pacts" to ensure that whoever they hit stays dead.</p>
           
           <p>Unit Roles:</p>
-          
           <p>Leader: Fabius Bile. He buffs a unit of Chosen to T5, making them significantly harder to kill in the mid-board.</p>
-          
           <p>Objective Holders: Cultist Mob. Cheap, disposable, and they "Sticky" objectives so the rest of the army can move forward.</p>
-          
           <p>Trade Units: Warp Talons. With their ability to go back into Strategic Reserves after killing a unit, they "trade" and then hide.</p>
-          
           <p>Anti-Tank: Chaos Vindicator. The Demolisher Cannon is the ultimate "point and delete" tool for enemy armor.</p>
-          
           <p>Secondary Scorers: Nurglings (Allied). Still the gold standard for cheap infiltrators that screen and score "Cleanse."</p>
-          
           <p>Punchback: Chaos Chosen. They can Advance, Shoot, and Charge, making them the perfect reactionary unit.</p>
-          
           <p>Anvil: Land Raider. Not just a transport, but a T12 brick that demands the opponent's entire shooting phase to kill.</p>
-          
-          <p>Transport: Rhino. Essential for protecting the Chosen and Legionaries as they race toward the center.<p/>
+          <p>Transport: Rhino. Essential for protecting the Chosen and Legionaries as they race toward the center.</p>
+        </div>
       </article>
-      <article id="top3" class="border text_color">
-        <p>3. Necrons: Awakened Dynasty / Pantheon of Woe<br>
-          Winning List: Jordan Nach (Top 3 Major Placer)</p>
-          
+
+      <article id="top_necrons" class="accordion-item border text_color">
+        <button onclick="toggleTop3()" class="examples_button">
+          3. Necrons: Awakened Dynasty / Pantheon of Woe
+          <span class="icon" id="top3_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Winning List: Jordan Nach (Top 3 Major Placer)</p>
           <p>Despite point increases to C'tan, the Necrons remain dominant because their "stat checks" (High Toughness/Feel No Pain) are too much for many armies to handle.</p>
           
           <p>Why it's powerful: Reanimation Protocols. Even if you don't kill a unit entirely, it comes back. They play the "Primary Score" game better than anyone else.</p>
           
           <p>Unit Roles:</p>
-          
           <p>Leader: Technomancer. Usually attached to Wraiths to give them a 5+ Feel No Pain, making them arguably the tankiest unit in the meta.</p>
-          
           <p>Objective Holders: Immortals (with Plasmancer). They provide high-volume fire and are surprisingly durable for Battleline.</p>
-          
           <p>Trade Units: Skorpekh Destroyers. They go in, kill an elite squad, and if they die, it’s fine—they’ve done their job.</p>
-          
           <p>Anti-Tank: Canoptek Doomstalker. Since the 2026 update, these have become staple long-range fire support for the Awakened Dynasty.</p>
-          
           <p>Secondary Scorers: Deathmarks. Snipers that can Deep Strike into corners to score "Investigate Signals."</p>
-          
           <p>Punchback: C'tan Shard of the Nightbringer. The ultimate deterrent. If you move close to it, it will charge and destroy anything in the game.</p>
-          
           <p>Anvil: Canoptek Wraiths. With 4 wounds, a 4++ Invuln, and a 5+++ FNP, they are the definition of an immovable object.</p>
-          
-          <p>Transport: Night Scythe / Monolith. While rarely used as a "bus," the Monolith’s ability to teleport units across the board serves as the ultimate tactical transport.<p/>
+          <p>Transport: Night Scythe / Monolith. While rarely used as a "bus," the Monolith’s ability to teleport units across the board serves as the ultimate tactical transport.</p>
+        </div>
       </article>
 
       <h2 class="text_color sub_title">- Examples -</h2>
 
-      <article id="Space_Marines_army" class="border text_color">
-        <p>Space Marines: "Strike Force Aurelius"<br>
-          Detachment: Gladius Task Force</p>
-          
+      <article id="space_marines_army" class="accordion-item border text_color">
+
+        <button onclick="toggleSpace_Marines()" class="examples_button">
+
+          Space Marines: "Strike Force Aurelius"
+
+          <span class="icon" id="space_marines_icon">+</span>
+
+        </button>
+
+        <div class="accordion-body">
+
+          <p>Detachment: Gladius Task Force</p>
+
+         
+
           <p>1. The Army List (2,000 pts)</p>
-          
+
+         
+
           <p>Leader: Captain in Terminator Armor (Warlord, Enhancement: Fire Discipline)</p>
+
           <p>Leader: Lieutenant with Power Weapon (attached to Hellblasters)</p>
+
           <p>Leader: Apothecary Biologis (attached to Aggressors)</p>
+
           <p>Anvil: 6x Aggressor Squad (Auto Boltstorm Gauntlets & Fragstorm Launchers)</p>
+
           <p>Anvil: 5x Terminator Squad (Power Fists & 1x Assault Cannon)</p>
+
           <p>Objective Holders: 5x Intercessor Squad (with Astartes Grenade Launcher)</p>
+
           <p>Objective Holders: 5x Heavy Intercessor Squad (T6, 3 Wounds each)</p>
+
           <p>Trade Units: 5x Assault Intercessors with Jump Packs</p>
+
           <p>Trade Units: 5x Assault Intercessors with Jump Packs</p>
+
           <p>Anti-Tank: Gladiator Lancer (Lancer Laser Destroyer)</p>
+
           <p>Anti-Tank: Ballistus Dreadnought (Missile Launcher & Lascannon)</p>
+
           <p>Secondary Scorers: 5x Scout Squad (Sniper, Missile Launcher, Shotguns)</p>
+
           <p>Secondary Scorers: 5x Scout Squad (Sniper, Missile Launcher, Shotguns)</p>
+
           <p>Punchback: 10x Hellblaster Squad (Plasma Incinerators)</p>
+
           <p>Transport: Repulsor (Standard Loadout for Hellblaster protection)</p>
-          
+
+         
+
           <p>2. Role Breakdown</p>
-          
+
+         
+
           <p>Leader: Captain in Terminator Armor<br>
+
           Equipped with the Fire Discipline enhancement, he is a force multiplier. When his unit is in the Devastator Doctrine, they gain Sustained Hits 1 and Critical Hits on a 5+. This turns a standard Terminator squad into a high-volume fire platform that can shred light tanks and heavy infantry alike.</p>
-          
+
+         
+
           <p>Anvil: Aggressor Squad (with Apothecary Biologis)<br>
+
           This is your "Mid-board Bully." The Biologis grants the unit Lethal Hits. In the Gladius detachment, you use the Aggressive Surge stratagem to ensure they reach the center. With T6 and a high volume of shots, they are incredibly difficult to shift and punish anyone who tries to charge them.</p>
-          
+
+         
+
           <p>Objective Holders: Heavy Intercessors<br>
+
           While standard Intercessors provide Sticky Objectives, the Heavy Intercessors are your "Hardened Point." With T6 and +1 to their armor saves against Damage 1 weapons, they sit on the most contested objective and dare the enemy to waste high-quality anti-tank shots on them.</p>
-          
+
+         
+
           <p>Trade Units: Jump Pack Intercessors<br>
+
           These are your "Harassers." With a 12" move and the Hammer of Wrath ability (dealing mortal wounds on the charge), they are perfect for diving onto an enemy's home objective to kill a small unit of Cultists or Grots. You trade them to disrupt the opponent's "Primary" scoring.</p>
-          
+
+         
+
           <p>Anti-Tank: Gladiator Lancer<br>
+
           The Lancer is the most reliable sniper in the Astartes armory. Its Aquila Optics allow for a hit, wound, and damage reroll every time it shoots. It stays in the back corners, drawing lines of fire to the most dangerous enemy vehicles.</p>
-          
+
+         
+
           <p>Secondary Scorers: Scouts<br>
+
           In 2026, Scouts are mandatory. Their Guerrilla Tactics allow them to go into Strategic Reserves at the end of the enemy turn. They spend the game hopping around the board corners to score "Investigate Signals" or "Deploy Teleport Homers."</p>
-          
+
+         
+
           <p>Punchback: Hellblasters (with Lieutenant)<br>
+
           This unit lives inside the Repulsor. The Lieutenant grants them Lethal Hits and Fall Back and Shoot. If an enemy charges them, they shoot. If they die, their For the Chapter! rule lets them shoot one last time on a 3+. They are your "Insurance Policy"—if the enemy moves into the open, the Hellblasters erase them.</p>
-          
+
+         
+
           <p>Transport: Repulsor<br>
+
           The Repulsor is more than a taxi; it is a mobile bunker. Its Emergency Embarkation ability allows a nearby unit (like the Hellblasters) to hop back inside if they are charged, effectively wasting the opponent's turn and keeping your high-value plasma guns safe.</p>
-          
+
+         
+
           <p>Why this list wins:<br>
-          It wins through Flexibility. Because you have access to the Tactical Doctrine (Advance and Shoot) and the Assault Doctrine (Advance and Charge), you are never "out of range." You have the anti-tank to kill Knights, the volume of fire to kill hordes, and the mobility to play the mission. It is the "Swiss Army Knife" of 40k.<p/>
+
+          It wins through Flexibility. Because you have access to the Tactical Doctrine (Advance and Shoot) and the Assault Doctrine (Advance and Charge), you are never "out of range." You have the anti-tank to kill Knights, the volume of fire to kill hordes, and the mobility to play the mission. It is the "Swiss Army Knife" of 40k.</p>
+
+        </div>
+
       </article>
-      <article id="Black_Templars_army" class="border text_color">
-        <p>Black Templars: "The Iron Tide of Sigismund"<br>
-          Detachment: Righteous Crusaders</p>
+      <article id="Black_Templars_army" class="accordion-item border text_color">
+        <button onclick="toggleBlack_Templars()" class="examples_button">
+          Black Templars: "The Iron Tide of Sigismund"
+          <span class="icon" id="black_templars_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Righteous Crusaders</p>
           
           <p>1. The Army List (2,000 pts)</p>
-          
           <p>Leader: High Marshal Helbrecht (Warlord, attached to Sword Brethren)</p>
           <p>Leader: The Emperor’s Champion (attached to Sword Brethren)</p>
           <p>Leader: Chaplain Grimaldus (attached to 20-man Crusader Squad)</p>
@@ -192,7 +250,6 @@
           <p>Transport: Land Raider Crusader (Hurricane Bolters & Multi-melta)</p>
           
           <p>2. Role Breakdown</p>
-          
           <p>Leader: High Marshal Helbrecht<br>
           Helbrecht is a melee monster. He grants his unit +1 Strength and +1 Critical Hit range (meaning they trigger Lethal or Sustained Hits on a 5+). When leading Sword Brethren, he makes them capable of wounding T12 vehicles on a 4+ or 5+, which is terrifying for a pure infantry unit.</p>
           
@@ -215,20 +272,25 @@
           With Infiltrate and the ability to go back into reserves, Scouts handle your "Cleanse" and "Deploy Teleport Homers" actions. They are the only units in your army allowed to not be in combat.</p>
           
           <p>Punchback: The Emperor’s Champion<br>
-          The Champion is a heat-seeking missile for enemy characters. With Precision and S8 high-AP attacks, he can jump out of a Land Raider and "one-shot" an enemy Captain or Librarian. He is your insurance policy against powerful enemy buff-characters.</p>
+          The Champion is a heat-seeing missile for enemy characters. With Precision and S8 high-AP attacks, he can jump out of a Land Raider and "one-shot" an enemy Captain or Librarian. He is your insurance policy against powerful enemy buff-characters.</p>
           
           <p>Transport: Land Raider Crusader<br>
           The "Brick" that carries Helbrecht and the 10-man Sword Brethren squad. With Assault Ramp, it allows the Templars to move 12", disembark, and charge, giving your most lethal melee unit a massive threat range that ignores most enemy screens.</p>
           
           <p>Why this list wins:<br>
-          It wins through Relentless Pressure. The opponent has to deal with two Gladiator Lancers in the back, a 20-man Grimaldus-led squad in the center, and a Land Raider full of Helbrecht’s elites screaming down one flank. The Black Templars don't play a "finesse" game—they overwhelm the opponent’s ability to target-prioritize until the enemy is simply out of models.<p/>
+          It wins through Relentless Pressure. The opponent has to deal with two Gladiator Lancers in the back, a 20-man Grimaldus-led squad in the center, and a Land Raider full of Helbrecht’s elites screaming down one flank. The Black Templars don't play a "finesse" game—they overwhelm the opponent’s ability to target-prioritize until the enemy is simply out of models.</p>
+        </div>
       </article>
-      <article id="Blood_Angels_army" class="border text_color">
-        <p>Blood Angels: "The Angel’s Fury"<br>
-          Detachment: Liberator Assault Group</p>
+
+      <article id="Blood_Angels_army" class="accordion-item border text_color">
+        <button onclick="toggleBlood_Angels()" class="examples_button">
+          Blood Angels: "The Angel’s Fury"
+          <span class="icon" id="blood_angels_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Liberator Assault Group</p>
           
           <p>1. The Army List (2,000 pts)</p>
-          
           <p>Leader: Commander Dante (Warlord, attached to Sanguinary Guard)</p>
           <p>Leader: Lemartes (attached to Death Company)</p>
           <p>Leader: The Sanguinor (Lone Operative / Epic Hero)</p>
@@ -242,12 +304,10 @@
           <p>Anti-Tank: Baal Predator (Flamestorm Cannon & 2x Heavy Flamers)</p>
           <p>Secondary Scorers: 5x Scouts (with Sniper Rifle)</p>
           <p>Secondary Scorers: 5x Infiltrators (Helix Gauntlet & Omni-scrambler)</p>
-          <p>Punchback: The Sanguinor<br>
-          Transport: Impulsor (Shield Dome)</p>
-          <p>Transport: Baal Predator (Functions as an aggressive line-breaker)</p>
+          <p>Punchback: The Sanguinor</p>
+          <p>Transport: Impulsor (Shield Dome)</p>
           
           <p>2. Role Breakdown</p>
-          
           <p>Leader: Commander Dante<br>
           Dante is your "Force Multiplier." He grants his unit +1 to Hit and, more importantly, ensures they are never affected by negative modifiers to their Move, Advance, or Charge rolls. In 2026, Dante ensures the Sanguinary Guard hit their target like a gold-plated sledgehammer.</p>
           
@@ -276,14 +336,19 @@
           The Sanguinor is the ultimate "Gotcha" unit. He doesn't start on the board; he uses Miraculous Intervention to drop into combat the moment an enemy charges one of your units. He strikes first with a high volume of high-AP attacks, often killing the enemy charger before they even get to swing at your troops.</p>
           
           <p>Why this list wins:<br>
-          The Blood Angels win through Violence and Momentum. By combining the Sanguinary Guard's elite precision with the Death Company's raw strength, you create a "Dual Threat" that most armies cannot screen against. You use the Baal Predator to flush enemies out of cover, then use your Jump Pack units to finish them off in the Assault phase.<p/>
+          The Blood Angels win through Violence and Momentum. By combining the Sanguinary Guard's elite precision with the Death Company's raw strength, you create a "Dual Threat" that most armies cannot screen against. You use the Baal Predator to flush enemies out of cover, then use your Jump Pack units to finish them off in the Assault phase.</p>
+        </div>
       </article>
-      <article id="Dark_Angels_army" class="border text_color">
-        <p>Dark Angels: "The Lion’s Triad"<br>
-          Detachment: Inner Circle Task Force</p>
+
+      <article id="Dark_Angels_army" class="accordion-item border text_color">
+        <button onclick="toggleDark_Angels()" class="examples_button">
+          Dark Angels: "The Lion’s Triad"
+          <span class="icon" id="dark_angels_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Inner Circle Task Force</p>
           
           <p>1. The Army List (2,000 pts)</p>
-          
           <p>Leader: Lion El'Jonson (Warlord)</p>
           <p>Leader: Belial, Grand Master of the Deathwing (attached to Knights)</p>
           <p>Leader: Azrael (attached to Company Heroes)</p>
@@ -301,7 +366,6 @@
           <p>Transport: Razorback (Twin Lascannon)</p>
           
           <p>2. Role Breakdown</p>
-          
           <p>Leader: Lion El'Jonson<br>
           The Primarch is your "un-killable" center. His All-slayer profile deletes monsters and tanks, but his Aura of the Lion is what wins games—granting nearby units a 4+ Feel No Pain against Mortal Wounds. In 2026, he is the ultimate deterrent; you don't charge the Lion, you run away from him.</p>
           
@@ -331,14 +395,19 @@
           The Razorback provides fire support for the Intercessors, while the Executioner ensures your heavy-hitters get to the center of the board without being picked off by the "trade pieces" of other factions.</p>
           
           <p>Why this list wins:<br>
-          The Dark Angels win through Focus. By picking one objective to be "Vowed," you ensure that the math is always in your favor on the most important part of the board. Between the Lion's defensive auras and the Deathwing's inherent toughness, you simply play a more efficient version of the game than your opponent.<p/>
+          The Dark Angels win through Focus. By picking one objective to be "Vowed," you ensure that the math is always in your favor on the most important part of the board. Between the Lion's defensive auras and the Deathwing's inherent toughness, you simply play a more efficient version of the game than your opponent.</p>
+        </div>
       </article>
-      <article id="Grey_Knights_army" class="border text_color">
-        <p>Grey Knights: "The Silver Tide"<br>
-          Detachment: Teleport Strike Force</p>
+
+      <article id="Grey_Knights_army" class="accordion-item border text_color">
+        <button onclick="toggleGrey_Knights()" class="examples_button">
+          Grey Knights: "The Silver Tide"
+          <span class="icon" id="grey_knights_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Teleport Strike Force</p>
           
           <p>1. The Army List (2,000 pts)</p>
-          
           <p>Leader: Kaldor Draigo (Warlord, attached to 5x Terminators)</p>
           <p>Leader: Grand Master in Nemesis Dreadknight (Enhancement: Sigil of Exigence)</p>
           <p>Leader: Librarian (Purge Soul psychic attack)</p>
@@ -353,10 +422,9 @@
           <p>Secondary Scorers: 5x Purgation Squad (4x Incinerators)</p>
           <p>Secondary Scorers: 1x Inquisitor Coteaz (Allied Agent for CP regen)</p>
           <p>Punchback: 5x Paladins (3x Psycannons, led by Librarian)</p>
-          <p>Transport: N/A (The "Teleport Assault" army rule replaces the need for transports).</p>
+          <p>Transport: N/A (Teleport Assault rule)</p>
           
           <p>2. Role Breakdown</p>
-          
           <p>Leader: Kaldor Draigo<br>
           Draigo is your "Reliable Charge" button. His One-man Army rule gives his unit +3 to charge rolls when arriving from Deep Strike. In a meta where 9" charges are risky, Draigo makes a 6" charge almost guaranteed, allowing his Terminators to delete a key enemy unit the moment they arrive.</p>
           
@@ -382,11 +450,17 @@
           The Grey Knights don't use Rhinos or Land Raiders because the entire army can fly. The Teleport Assault rule allows you to pick up up to 3 units every turn and place them in Deep Strike. This "virtual transport" makes the Grey Knights the most mobile army in Warhammer 40k.</p>
           
           <p>Why this list wins:<br>
-          It wins through Positioning. You never have to walk across the board and get shot. You start in cover, teleport to where the enemy is weak, strike, and then use Mists of Deimos to teleport away when the enemy tries to charge you. You are playing a game of "cat and mouse" where you are always the cat.<p/>
+          It wins through Positioning. You never have to walk across the board and get shot. You start in cover, teleport to where the enemy is weak, strike, and then use Mists of Deimos to teleport away when the enemy tries to charge you. You are playing a game of "cat and mouse" where you are always the cat.</p>
+        </div>
       </article>
-      <article id="Space_Wolves_army" class="border text_color">
-        <p>Space Wolves: "The Iron-Claw Pack"<br>
-          Detachment: Stormlance Task Force</p>
+      </article>
+      <article id="Space_Wolves_army" class="accordion-item border text_color">
+        <button onclick="toggleSpace_Wolves()" class="examples_button">
+          Space Wolves: "The Iron-Claw Pack"
+          <span class="icon" id="space_wolves_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Stormlance Task Force</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
@@ -397,8 +471,8 @@
           <p>Anvil: 6x Thunderwolf Cavalry (Storm Shields & Heirloom Weapons)</p>
           <p>Objective Holders: 5x Intercessors (with Astartes Grenade Launcher)</p>
           <p>Objective Holders: 5x Intercessors (with Astartes Grenade Launcher)</p>
-          <p>Trade Units: 5x Fenrisian Wolves<br>
-          Trade Units: 5x Fenrisian Wolves</p>
+          <p>Trade Units: 5x Fenrisian Wolves</p>
+          <p>Trade Units: 5x Fenrisian Wolves</p>
           <p>Anti-Tank: Gladiator Lancer (Lancer Laser Destroyer)</p>
           <p>Anti-Tank: Gladiator Lancer (Lancer Laser Destroyer)</p>
           <p>Secondary Scorers: 5x Wulfen (with Storm Shields)</p>
@@ -429,15 +503,18 @@
           <p>Punchback: Wolf Guard Terminators<br>
           Kept in Teleport Strike (Deep Strike), these are your "Reactionary Hammer." When an enemy commits their heavy-hitter to the center objective, the Terminators drop in. With Storm Shields and Power Fists, they can weather the storm and punch back with S8 high-damage swings.</p>
           
-          <p>Transport: (Thunderwolf Speed)<br>
-          Because the entire core of the army moves 10", they do not need Rhinos or Impulsors. They use the "Ride Hard, Ride Fast" stratagem to gain a -1 to be hit and -1 to be wounded while crossing the board, effectively acting as their own armored transport.</p>
-          
           <p>Why this list wins:<br>
-          It wins through Aggression and Durability. The Stormlance detachment allows you to dictate the engagement. By Turn 2, you are almost guaranteed to be in the enemy's deployment zone. The opponent is forced to choose between shooting at the Thunderwolves (who have a 4++ save) or the Gladiator Lancers (who are deleting their tanks). Most opponents simply lack the volume of fire to stop both.<p/>
+          It wins through Aggression and Durability. The Stormlance detachment allows you to dictate the engagement. By Turn 2, you are almost guaranteed to be in the enemy's deployment zone. The opponent is forced to choose between shooting at the Thunderwolves (who have a 4++ save) or the Gladiator Lancers (who are deleting their tanks). Most opponents simply lack the volume of fire to stop both.</p>
+        </div>
       </article>
-      <article id="Sororitas_army" class="border text_color">
-        <p>Adepta Sororitas: "The Hallowed Vengeance"<br>
-          Detachment: Army of Faith</p>
+
+      <article id="Sororitas_army" class="accordion-item border text_color">
+        <button onclick="toggleSororitas()" class="examples_button">
+          Adepta Sororitas: "The Hallowed Vengeance"
+          <span class="icon" id="sororitas_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Army of Faith</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
@@ -448,13 +525,13 @@
           <p>Anvil: 10x Sacresants (Anointed Halberds & Shields)</p>
           <p>Objective Holders: 10x Battle Sisters (with 1x Multi-melta & Simulacrum Imperialis)</p>
           <p>Objective Holders: 10x Battle Sisters (with 1x Multi-melta)</p>
-          <p>Trade Units: 5x Seraphim (Hand Flamers)<br>
-          Trade Units: 5x Seraphim (Hand Flamers)</p>
+          <p>Trade Units: 5x Seraphim (Hand Flamers)</p>
+          <p>Trade Units: 5x Seraphim (Hand Flamers)</p>
           <p>Anti-Tank: Castigator (Battle Cannon & 3x Heavy Bolters)</p>
           <p>Anti-Tank: Exorcist (Exorcist Missile Launcher)</p>
           <p>Secondary Scorers: 1x Death Cult Assassins (Allied Agents)</p>
-          <p>Secondary Scorers: 1x Penitent Engine<br>
-          Punchback: 10x Zephyrim (led by Saint Celestine)</p>
+          <p>Secondary Scorers: 1x Penitent Engine</p>
+          <p>Punchback: 10x Zephyrim (led by Saint Celestine)</p>
           <p>Transport: Immolator (Twin Multi-melta)</p>
           <p>Transport: Sororitas Rhino</p>
           
@@ -469,30 +546,21 @@
           <p>Trade Units: Seraphim<br>
           With their Burning Descent ability, they Deep Strike, fire their hand flamers (benefiting from the detachment's +1 to Wound for acts of faith), and then move 6" again. You trade them to clear an enemy's light infantry off a backfield point, forcing the opponent to redirect fire away from your tanks.</p>
           
-          <p>Anti-Tank: Castigator & Exorcist<br>
-          Castigator: Provides high-volume, high-strength shells. Its Righteous Judgment rule ignores Cover, making it a nightmare for heavy infantry and light armor.<br>
-          Exorcist: The premier indirect-fire anti-tank. It forces the opponent to stay out of open lanes, and with a Miracle Die, you can guarantee the high-damage rolls needed to pop a transport from behind a wall.</p>
-          
-          <p>Secondary Scorers: Penitent Engines & Death Cult Assassins<br>
-          Penitent Engine: An "Advanced and Charge" monster. It’s cheap, fast, and forces the opponent to deal with it. It scores "Cleanse" easily while moving toward the enemy lines.<br>
-          Death Cult Assassins: Tiny, cheap, and easily hidden. They exist solely to perform "Actions" and score secondaries while being too small for the opponent to waste a high-quality shot on.</p>
-          
           <p>Punchback: Zephyrim (with Saint Celestine)<br>
           This is your counter-offensive. When an enemy charges your front line, Celestine and her Zephyrim fly in. Celestine's Healing Tears brings models back to life, and the Zephyrim gain Lethal Hits on the charge, shredding anything from Marines to light vehicles.</p>
           
-          <p>Anvil: The Triumph of Saint Katherine<br>
-          The Triumph is a massive 18-wound "buff-hub." It allows nearby units to perform multiple Acts of Faith per phase and provides a 6+ Feel No Pain. It sits in the center of the board, surrounded by Sacresants, creating a "No-Go Zone" for the enemy.</p>
-          
-          <p>Transport: Immolator & Rhino<br>
-          Immolator: Its Fire Support rule allows it to split a 10-man sister squad into two 5-man units, doubling your objective-holding efficiency. It also carries the Multi-melta punch needed to support the front lines.<br>
-          Rhino: Standard delivery for the Sacresants and the Triumph, ensuring they reach the center board without being picked off by long-range snipers.</p>
-          
           <p>Why this list wins:<br>
-          It wins through Guaranteed Outcomes. While other armies roll dice and hope for the best, the Sisters use Miracle Dice to know their Melta shot will deal 6 damage or that their save will succeed. In 2026, where efficiency is everything, the ability to remove luck from the equation makes the Sororitas an incredibly stable tournament choice.<p/>
+          It wins through Guaranteed Outcomes. While other armies roll dice and hope for the best, the Sisters use Miracle Dice to know their Melta shot will deal 6 damage or that their save will succeed. In 2026, where efficiency is everything, the ability to remove luck from the equation makes the Sororitas an incredibly stable tournament choice.</p>
+        </div>
       </article>
-      <article id="Custodes_army" class="border text_color">
-        <p>Adeptus Custodes: "The Auric Spearhead"<br>
-          Detachment: Shield Host</p>
+
+      <article id="Custodes_army" class="accordion-item border text_color">
+        <button onclick="toggleCustodes()" class="examples_button">
+          Adeptus Custodes: "The Auric Spearhead"
+          <span class="icon" id="custodes_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Shield Host</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
@@ -507,10 +575,10 @@
           <p>Trade Units: 5x Prosecutors (Allied Sisters of Silence)</p>
           <p>Anti-Tank: Caladius Grav-tank (Twin Iliastus Accelerator Cannon)</p>
           <p>Anti-Tank: Caladius Grav-tank (Twin Iliastus Accelerator Cannon)</p>
-          <p>Secondary Scorers: 2x Venatari Custodians<br>
-          Secondary Scorers: 2x Venatari Custodians</p>
+          <p>Secondary Scorers: 2x Venatari Custodians</p>
+          <p>Secondary Scorers: 2x Venatari Custodians</p>
           <p>Punchback: 5x Custodian Wardens (led by Trajann)</p>
-          <p>Transport: N/A (Custodes utilize "Golden Light" Deep Strike and the Caladius's speed).</p>
+          <p>Transport: N/A (Custodes utilize "Golden Light" Deep Strike).</p>
           
           <p>2. Role Breakdown</p>
           
@@ -520,31 +588,21 @@
           <p>Objective Holders: Custodian Guard<br>
           With their Sentinel Blades and Storm Shields, these units boast a 4+ Invulnerable save and OC 3 per model. Their Resolute Guardians rule allows them to shoot twice if they are standing on an objective you control, making them the most dangerous "home-room" defenders in the meta.</p>
           
-          <p>Trade Units: Prosecutors & Solo Allarus<br>
-          Prosecutors: At a tiny point cost, these 5 models are your "bait." You put them in lanes to trigger enemy Overwatch or to hold a point for one turn before they inevitably die, forcing the opponent to move their expensive units out of cover.<br>
-          Solo Allarus: Using their From Golden Light rule, they can be placed into Reserves and reappear. You "trade" their position to distract an opponent's heavy-hitter.</p>
-          
           <p>Anti-Tank: Caladius Grav-tanks<br>
           Since Custodes lack high-volume anti-tank in melee (unless they get close), the Caladius is mandatory. Its Accelerator Cannon provides S12+ shots with high damage. In the 2026 meta, its speed (12") allows it to find angles that the slow-moving infantry cannot.</p>
           
-          <p>Secondary Scorers: Venatari Custodians<br>
-          Venatari are the ultimate "Action Monkeys" for the Ten Thousand. Their Superior Infiltration allows them to Deep Strike within 9" and then move, or drop in for 0CP. They score "Behind Enemy Lines" and then fly away to safety using their high mobility.</p>
-          
-          <p>Punchback: Wardens (with Trajann)<br>
-          The Wardens are your "reactive hammer." When an enemy charges your front-line Guard, Trajann and his Wardens (who have a 4+ Feel No Pain for one phase per game) counter-charge. Between Trajann's S10 axe and the Wardens' high-volume spears, nothing survives the "Punchback."</p>
-          
-          <p>Anvil: Allarus Terminators<br>
-          The Allarus are the definition of "Anvil." With T7 and 4 Wounds each, they are incredibly difficult to shift. They use their Slayers of Tyrants rule to target characters, effectively forcing the opponent to keep their leaders far away from the center objective.</p>
-          
-          <p>Transport: (The Golden Light)<br>
-          Custodes rarely use Venestari or Land Raiders in 2026. Instead, they use the "Golden Light of the Emperor" (Deep Strike) as their transport. By keeping 25-30% of the army in the sky, you "transport" your most lethal units directly into the heart of the enemy's formation on Turn 2.</p>
-          
           <p>Why this list wins:<br>
-          It wins through Individual Model Superiority. Each Custodian model is essentially a "Hero" level character in any other army. By using the Shield Host to grant Critical Hits on a 5+ during the "Martial Mastery" turns, you can delete entire units with just 4 or 5 models. You don't need to outnumber the opponent; you just need to ensure that every model you have is fighting at 100% efficiency.<p/>
+          It wins through Individual Model Superiority. Each Custodian model is essentially a "Hero" level character in any other army. By using the Shield Host to grant Critical Hits on a 5+ during the "Martial Mastery" turns, you can delete entire units with just 4 or 5 models.</p>
+        </div>
       </article>
-      <article id="Mechanicus_army" class="border text_color">
-        <p>Adeptus Mechanicus: "The Data-Reaper Protocol"<br>
-          Detachment: Skitarii Hunter Cohort</p>
+
+      <article id="Mechanicus_army" class="accordion-item border text_color">
+        <button onclick="toggleMechanicus()" class="examples_button">
+          Adeptus Mechanicus: "The Data-Reaper Protocol"
+          <span class="icon" id="mechanicus_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Skitarii Hunter Cohort</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
@@ -560,8 +618,8 @@
           <p>Anti-Tank: Onager Dunecrawler (Neutron Laser & Cognis Heavy Stubber)</p>
           <p>Secondary Scorers: 5x Pteraxii Sterylizors</p>
           <p>Secondary Scorers: 3x Serberys Sulphurhounds</p>
-          <p>Punchback: 5x Sicarian Infiltrators<br>
-          Transport: Skorpius Dunerider</p>
+          <p>Punchback: 5x Sicarian Infiltrators</p>
+          <p>Transport: Skorpius Dunerider</p>
           <p>Transport: Skorpius Dunerider</p>
           
           <p>2. Role Breakdown</p>
@@ -572,32 +630,20 @@
           <p>Objective Holders: Skitarii Vanguard<br>
           Vanguard are the gold standard for Battleline in 2026. Their Rad-Saturation aura reduces the Objective Control (OC) of nearby enemies by 1. This means even if you are outnumbered on a point, you often still control it because the enemy's OC has been neutered.</p>
           
-          <p>Trade Units: Sydonian Dragoons (Taser Lances)<br>
-          These are your "Melee Missiles." With a 10" move and Stealth, they are surprisingly hard to shoot down as they close the gap. With Sustained Hits 2 on their lances, they can punch way above their weight class, trading their points for an enemy's light tank or elite infantry squad.</p>
-          
-          <p>Anti-Tank: Onager Dunecrawler<br>
-          The Neutron Laser is the Omnissiah’s answer to heavy armor. At S16 and high damage, it is a dedicated "Knight-Killer." In 2026, the Onager’s 4+ Invulnerable Save aura for nearby Battleline units makes it a defensive lynchpin as much as an offensive one.</p>
-          
-          <p>Secondary Scorers: Pteraxii Sterylizors & Serberys Sulphurhounds<br>
-          Pteraxii: Their Thermal Riders ability allows them to move 12", shoot their flamers, and then jump back into the sky (Reserves) at the end of the turn. They are the ultimate "Action Monkeys.<br>
-          Sulphurhounds: High-speed cavalry used for "Linebreaker" or "Signals," utilizing their breath weapons to chip away at small enemy squads holding backfield points.</p>
-          
-          <p>Punchback: Sicarian Infiltrators<br>
-          With Fights First and the ability to prevent enemy units from setting up within 12" of them, these are your "Reactionary Protectors." You keep them hidden behind your Breachers; if the Breachers are charged, the Infiltrators move in to punish the attackers with high-volume precision strikes.</p>
-          
           <p>Anvil: Kataphron Breachers & Kastelan Robots<br>
-          Breachers: These are the "Meat" of the army. With T7, 3 Wounds, and a 2+ save in cover, they are the best firing platform in the codex. When paired with the Technoarcheologist, they prevent enemies from Deep Striking within 12", protecting your backline.<br>
-          Kastelan Robots: The "Iron Wall." With T9 and a 2+ save, they act as a physical barrier. If they enter the "Conqueror Protocol," they become a terrifying melee threat that refuses to die.</p>
-          
-          <p>Transport: Skorpius Dunerider<br>
-          Essential for the "Vanguard Rush." It protects your squishy infantry from indirect fire and has Firing Deck 2, allowing your special weapons to fire from the safety of the hover-hull. Its high-volume stubber fire is also excellent for clearing enemy screens.</p>
+          Breachers: These are the "Meat" of the army. With T7, 3 Wounds, and a 2+ save in cover, they are the best firing platform in the codex. When paired with the Technoarcheologist, they prevent enemies from Deep Striking within 12", protecting your backline.</p>
           
           <p>Why this list wins:<br>
-          The Adeptus Mechanicus wins through Layered Buffs. By turn three, between the Doctrina Imperatives (providing extra AP or better saves) and the Rad-Saturation of your Vanguard, you are effectively playing a math game that the opponent can't win. You aren't just shooting; you are systematically reducing the enemy's ability to play the mission.<p/>
+          The Adeptus Mechanicus wins through Layered Buffs. By turn three, between the Doctrina Imperatives and the Rad-Saturation of your Vanguard, you are effectively playing a math game that the opponent can't win.</p>
+        </div>
       </article>
-      <article id="Astra_Militarum_army" class="border text_color">
-        <p>Astra Militarum: "The Iron Hammer Recon"<br>
-          Detachment: Combined Regiment</p>
+      <article id="Astra_Militarum_army" class="accordion-item border text_color">
+        <button onclick="toggleAstra_Militarum()" class="examples_button">
+          Astra Militarum: "The Iron Hammer Recon"
+          <span class="icon" id="astra_militarum_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Combined Regiment</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
@@ -608,49 +654,39 @@
           <p>Anvil: Rogal Dorn Battle Tank (Oppressor Cannon & Pulveriser Cannon)</p>
           <p>Objective Holders: 20x Cadian Shock Troops (with 2x Plasma Guns, 2x Meltaguns)</p>
           <p>Objective Holders: 20x Infantry Squad (with 2x Mortar Teams)</p>
-          <p>Trade Units: 1x Hellhound (Inferno Cannon)<br>
-          Trade Units: 1x Hellhound (Inferno Cannon)</p>
+          <p>Trade Units: 1x Hellhound (Inferno Cannon)</p>
+          <p>Trade Units: 1x Hellhound (Inferno Cannon)</p>
           <p>Anti-Tank: Leman Russ Vanquisher</p>
           <p>Anti-Tank: Leman Russ Vanquisher</p>
           <p>Secondary Scorers: 5x Gaunt’s Ghosts</p>
           <p>Secondary Scorers: 5x Attilan Rough Riders</p>
           <p>Punchback: 10x Kasrkin (Hot-shot Lasguns & Melta Mine)</p>
-          <p>Transport: Chimera<br>
-          Transport: Chimera</p>
+          <p>Transport: Chimera</p>
+          <p>Transport: Chimera</p>
           
           <p>2. Role Breakdown</p>
           
           <p>Leader: Lord Solar Leontus<br>
           Leontus is the "Grand Architect." He provides three orders that can be given to any Astra Militarum unit (including Tanks). Without him, your big tanks are hitting on 4+; with him, they hit on 3+ with rerolls. He also generates an extra CP every turn, which is essential for recycling your dead infantry.</p>
           
-          <p>Objective Holders: 20-man Infantry Blobs<br>
-          Cadian Shock Troops: Led by Ursula Creed, these allow you to use a Stratagem (like Fields of Fire) for 0CP. They are your primary mid-board presence.<br>
-          Standard Infantry: These stay in the backline with their mortars. Because they have a Heavy Weapon Team attached, they can chip away at enemy light infantry while holding the home objective.</p>
-          
-          <p>Trade Units: Hellhounds<br>
-          The Hellhound is the ultimate "sacrifice" unit. With its Flush Them Out rule, it removes the Benefit of Cover from an enemy unit it hits. You drive it straight at an objective, spray the enemy, and force them to deal with a T10 vehicle. When it dies, it has a high chance of exploding, dealing mortals to everything nearby.</p>
-          
-          <p>Anti-Tank: Leman Russ Vanquishers<br>
-          While the Vanquisher was a "meme" in early 10th edition, the 2026 points drop has made them the most efficient anti-tank in the game. At S18 and Heavy, they hit on a 2+ when stationary. They are "glass cannons" that you keep in the back to delete enemy Land Raiders from 72" away.</p>
-          
-          <p>Secondary Scorers: Gaunt’s Ghosts<br>
-          The Ghosts are the best secondary scorers in the Imperial Guard. They have Lone Operative and the ability to disappear from the board at the end of the turn and reappear anywhere else. They score "Behind Enemy Lines" and "Signals" with zero risk of being shot.</p>
-          
-          <p>Punchback: Kasrkin<br>
-          Kasrkin are "Vanguard Elite." They use their Warrior Elite ability to grant themselves two orders at once (e.g., "Take Aim" and "First Rank Fire, Second Rank Fire"). When an enemy takes an objective, you disembark these from a Chimera and unleash 30-40 shots of high-AP las-fire to reclaim it.</p>
-          
           <p>Anvil: Rogal Dorn Battle Tanks<br>
           The Rogal Dorn is the "Brick." Its Ablative Armour rule allows it to change the Damage characteristic of an incoming attack to 0 once per game. It is the unit you park in the middle of the board to absorb an entire army's worth of shooting while your infantry does the "real" work.</p>
           
-          <p>Transport: Chimera<br>
-          The Chimera is essential for the "Mechanized" feel of the 2026 Guard. It protects your Kasrkin and Officers from indirect fire and provides Firing Deck 2, allowing your special weapons to shoot from safety while the vehicle moves.</p>
+          <p>Anti-Tank: Leman Russ Vanquishers<br>
+          While the Vanquisher was a "meme" in early 10th edition, the 2026 points drop has made them the most efficient anti-tank in the game. At S18 and Heavy, they hit on a 2+ when stationary.</p>
           
           <p>Why this list wins:<br>
-          It wins through Attritional Dominance. Between the Reinforcements! stratagem (bringing back 20-man squads) and the high toughness of the Rogal Dorns, the Imperial Guard simply outlasts the opponent. You may lose 80% of your models, but if you have one Tank and one recycled squad of Cadians on the final turn, you’ve likely secured a 90+ point score.<p/>
+          It wins through Attritional Dominance. Between the Reinforcements! stratagem (bringing back 20-man squads) and the high toughness of the Rogal Dorns, the Imperial Guard simply outlasts the opponent.</p>
+        </div>
       </article>
-      <article id="Imperial_Agents_army" class="border text_color">
-        <p>Imperial Agents: "The Emperor’s Judgment"<br>
-          Detachment: Ordo Inquisitorial Combat Squad</p>
+
+      <article id="Imperial_Agents_army" class="accordion-item border text_color">
+        <button onclick="toggleImperial_Agents()" class="examples_button">
+          Imperial Agents: "The Emperor’s Judgment"
+          <span class="icon" id="imperial_agents_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Ordo Inquisitorial Combat Squad</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
@@ -659,157 +695,103 @@
           <p>Leader: Watch Captain Artemis (attached to Death Watch Veterans)</p>
           <p>Anvil: 10x Inquisitorial Henchmen (with 2x Mystics and 2x Jokaero Weaponsmiths)</p>
           <p>Anvil: 10x Death Watch Veterans (with 4x Frag Cannons and 4x Thunder Hammers)</p>
-          <p>Objective Holders: 10x Exaction Squad (with Arbites Medkit)</p>
-          <p>Objective Holders: 10x Navy Breachers (with Multi-laser and Demolition Charge)</p>
-          <p>Trade Units: 5x Death Watch Veterans (with Long Vigil Ranged Weapons)</p>
-          <p>Trade Units: 4x Culexus Assassin<br>
-          Anti-Tank: Vindicare Assassin</p>
+          <p>Objective Holders: 10x Exaction Squad</p>
+          <p>Objective Holders: 10x Navy Breachers</p>
+          <p>Trade Units: 5x Death Watch Veterans</p>
+          <p>Trade Units: 4x Culexus Assassin</p>
+          <p>Anti-Tank: Vindicare Assassin</p>
           <p>Anti-Tank: Canis Rex (Allied Freeblade Knight)</p>
           <p>Secondary Scorers: 1x Callidus Assassin</p>
-          <p>Secondary Scorers: 5x Voidsmen-at-Arms</p>
           <p>Punchback: Eversor Assassin</p>
           <p>Transport: Imperial Corvus Blackstar</p>
-          <p>Transport: Inquisitorial Chimera</p>
           
           <p>2. Role Breakdown</p>
           
           <p>Leader: Inquisitor Greyfax<br>
-          Greyfax is the "anti-meta" queen. Her Psyker Hunter ability allows her unit to target Psykers with Precision, which is vital for sniping out leaders in Thousand Sons or Grey Knights. She also provides an aura of +1 Leadership, making her henchmen nearly immune to Battle-shock.</p>
-          
-          <p>Objective Holders: Navy Breachers & Exaction Squad<br>
-          Navy Breachers: These are the "Close-Quarters" experts. They gain rerolls to wound when attacking units on objectives, making them surprisingly lethal at clearing points.<br>
-          Exaction Squad: With their Arbites Medkit, they are hard to shift. They have the "Ignore Cover" rule, ensuring that enemies can't hide from the Emperor's Law.</p>
-          
-          <p>Trade Units: Culexus Assassin<br>
-          The Culexus is your "psychic shield." You throw him forward against any army that relies on psychic powers or buffs. His Etherium ability makes him only hittable on a 6+, allowing him to "trade" time and resources against units ten times his cost.</p>
+          Greyfax is the "anti-meta" queen. Her Psyker Hunter ability allows her unit to target Psykers with Precision. She also provides an aura of +1 Leadership, making her henchmen nearly immune to Battle-shock.</p>
           
           <p>Anti-Tank: Canis Rex & Vindicare Assassin<br>
-          Canis Rex: Since Imperial Agents lack heavy tanks, recruiting a Freeblade Knight is standard meta. He provides the S20 melee and high-damage shooting the army otherwise lacks.<br>
-          Vindicare Assassin: His Shieldbreaker round ignores Invulnerable saves. In 2026, he is your primary answer to "untouchable" leaders like Magnus the Red or The Avatar of Khaine.</p>
-          
-          <p>Secondary Scorers: Callidus Assassin & Voidsmen<br>
-          Callidus: Essential for "Behind Enemy Lines." Her ability to redeploy every turn is the best scoring mechanic in the game.<br>
-          Voidsmen: These are your 50-point "Action Monkeys." They exist to sit in corners, scan for signals, and die quietly for the cause.</p>
-          
-          <p>Punchback: Eversor Assassin<br>
-          The Eversor is a "human bomb." You keep him in the shadows until an enemy unit successfully charges your Henchmen. He then counter-charges with a massive volume of attacks and Fights First, often clearing the objective before the enemy can swing.</p>
-          
-          <p>Anvil: Death Watch Veterans (with Frag Cannons)<br>
-          When 10 Veterans are led by Watch Captain Artemis and loaded into a Corvus Blackstar, they become the army's hammer. With high-toughness (relative to humans) and heavy weapons, they can take a center position and hold it through high-volume fire.</p>
-          
-          <p>Transport: Corvus Blackstar & Chimera<br>
-          Corvus Blackstar: Provides the essential aerial transport for the Death Watch, bypassing enemy lines.<br>
-          Inquisitorial Chimera: A mobile bunker for your Inquisitors. It protects your fragile leaders while providing decent support fire with its Multi-laser.</p>
+          Canis Rex: Since Imperial Agents lack heavy tanks, recruiting a Freeblade Knight is standard meta. He provides the S20 melee and high-damage shooting the army otherwise lacks.</p>
           
           <p>Why this list wins:<br>
-          Imperial Agents win through Denial. By using Assassins to shut down enemy strategies and Inquisitors to provide specialized buffs, you play a "reactive" game. You wait for the opponent to make a move, then reveal that you have the exact unit required to counter it. It is a high-skill, high-reward army that punishes opponents for being over-reliant on a single "super-unit."<p/>
+          Imperial Agents win through Denial. By using Assassins to shut down enemy strategies and Inquisitors to provide specialized buffs, you play a "reactive" game, punishing opponents for being over-reliant on a single "super-unit."</p>
+        </div>
       </article>
-      <article id="Imperial_Knights_army" class="border text_color">
-        <p>Imperial Knights: "The Bastion of Iron"</p>
-        <p>Detachment: Noble Lance</p>
-        
-        <p>1. The Army List (2,000 pts)</p>
-        
-        <p>Leader: Knight Paladin (Warlord, Enhancement: Reverie of the True Noble)</p>
-        <p>Leader: Canis Rex (Legendary Freeblade)</p>
-        <p>Anvil: Knight Paladin (T12, 22 Wounds, 2+/4++)</p>
-        <p>Objective Holders: Armiger Warglaive</p>
-        <p>Objective Holders: Armiger Warglaive</p>
-        <p>Trade Units: Armiger Helverin</p>
-        <p>Trade Units: Armiger Helverin</p>
-        <p>Anti-Tank: Armiger Warglaive (Thermal Spear)</p>
-        <p>Anti-Tank: Armiger Warglaive (Thermal Spear)</p>
-        <p>Secondary Scorers: Callidus Assassin (Allied Agent)</p>
-        <p>Secondary Scorers: 1x Voidsmen-at-Arms (Allied Agents)</p>
-        <p>Punchback: Canis Rex (Freedom's Hand Melee)</p>
-        <p>Transport: N/A (Knights utilize "Super-Heavy Walker" to move over terrain as their transport mechanism).</p>
-    
-        <p>2. Role Breakdown</p>
-    
-        <p>Leader: Knight Paladin<br>
-        The Paladin is your tactical lynchpin. Its Bondsman ability allows it to grant Lethal Hits and Reroll Hits of 1 to an Armiger. With the Reverie of the True Noble enhancement, it also radiates an aura that makes nearby Armigers tougher to Battleshock, keeping your "Lay Low the Tyrant" oath active.</p>
-    
-        <p>Objective Holders: Armiger Warglaives<br>
-        Warglaives are the "Objective Secured" workhorses. They have enough OC to take points from most elite infantry, and their Impaling Strike makes them terrifying to charge. In 2026, you run them in pairs to ensure that if one falls, the objective remains under your control.</p>
-    
-        <p>Trade Units: Armiger Helverins<br>
-        Helverins provide the long-range "harassment." Their Autocannons are perfect for deleting "Action Monkeys" (like Vespids or Swooping Hawks). You "trade" them by positioning them in lanes where the opponent must choose between shooting your Big Knights or stopping the Helverins from chip-damaging their backline.</p>
-    
-        <p>Anti-Tank: Armiger Warglaives (Thermal Spears)<br>
-        The Thermal Spear is the primary anti-tank tool of this list. At S12 and D6+4 damage at half range, a pack of Warglaives can hunt down a Land Raider or a Greater Daemon with surgical efficiency. Because they are faster than the Big Knights, they act as your "Outriders."</p>
-    
-        <p>Secondary Scorers: Callidus Assassin & Voidsmen<br>
-        Callidus Assassin: The MVP of Imperial scoring. Her Polymorphine rule allows her to disappear and reappear anywhere on the board every turn. She scores "Behind Enemy Lines" and "Deploy Homers" while your Knights focus on killing.<br>
-        Voidsmen-at-Arms: Cheap 50-point units used to sit on your home objective so your expensive 150-point Armigers can move forward.</p>
-    
-        <p>Punchback: Canis Rex<br>
-        Canis Rex is the ultimate reactionary tool. Because he doesn't require a Bondsman buff to be effective, he functions independently. His Freedom's Hand melee weapon (S20) can one-shot almost anything in the game. If an enemy charges your Paladin, Rex counter-charges and ends the threat.</p>
-    
-        <p>Anvil: Knight Paladin<br>
-        While all Knights are "tanky," the Paladin uses the Rotate Ion Shields stratagem most effectively. With a 2+ armor save and a 4+ invulnerable save against ranged attacks, it sits in the center of the board and absorbs the "Alpha Strike" while your Armigers score.</p>
-    
-        <p>Transport: (Super-Heavy Walker)<br>
-        Knights "transport" themselves by ignoring obstacles. In the 2026 update, the Super-Heavy Walker rule was refined to allow them to move over ruins and models seamlessly. This gives the army a "virtual" transport speed, as they can take the shortest geometric path to any target.</p>
-    
-        <p>Why this list wins:<br>
-        It wins through Force Multiplication. A single Big Knight makes every Armiger around it significantly more lethal. By the time the opponent manages to chew through the Warglaives, your army has usually achieved "Honoured" status, granting a 5+ Feel No Pain that makes the remaining Knights virtually unkillable in the final rounds.</p>
+
+      <article id="Imperial_Knights_army" class="accordion-item border text_color">
+        <button onclick="toggleImperial_Knights()" class="examples_button">
+          Imperial Knights: "The Bastion of Iron"
+          <span class="icon" id="imperial_knights_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Noble Lance</p>
+          
+          <p>1. The Army List (2,000 pts)</p>
+          
+          <p>Leader: Knight Paladin (Warlord, Enhancement: Reverie of the True Noble)</p>
+          <p>Leader: Canis Rex (Legendary Freeblade)</p>
+          <p>Anvil: Knight Paladin (T12, 22 Wounds)</p>
+          <p>Objective Holders: Armiger Warglaive</p>
+          <p>Objective Holders: Armiger Warglaive</p>
+          <p>Trade Units: Armiger Helverin</p>
+          <p>Trade Units: Armiger Helverin</p>
+          <p>Anti-Tank: Armiger Warglaive (Thermal Spear)</p>
+          <p>Secondary Scorers: Callidus Assassin</p>
+          <p>Punchback: Canis Rex</p>
+          
+          <p>2. Role Breakdown</p>
+          
+          <p>Leader: Knight Paladin<br>
+          The Paladin is your tactical lynchpin. Its Bondsman ability allows it to grant Lethal Hits and Reroll Hits of 1 to an Armiger. It also radiates an aura that makes nearby Armigers tougher to Battleshock.</p>
+          
+          <p>Anvil: Knight Paladin<br>
+          While all Knights are "tanky," the Paladin uses the Rotate Ion Shields stratagem most effectively. With a 2+ armor save and a 4+ invulnerable save, it sits in the center of the board and absorbs the "Alpha Strike."</p>
+          
+          <p>Why this list wins:<br>
+          It wins through Force Multiplication. A single Big Knight makes every Armiger around it significantly more lethal. By the final rounds, your 5+ Feel No Pain makes the remaining Knights virtually unkillable.</p>
+        </div>
       </article>
-      <article id="Chaos_Demons_army" class="border text_color">
-        <p>Chaos Daemons: "The Warp’s Embrace"</p>
-        <p>Detachment: Daemonic Incursion</p>
-        
-        <p>1. The Army List (2,000 pts)</p>
-        
-        <p>Leader: Be'lakor, The Dark Master (Warlord)</p>
-        <p>Leader: Shalaxi Helbane (Keeper of Secrets)</p>
-        <p>Leader: The Changeling (Lone Operative)</p>
-        <p>Anvil: Great Unclean One (Enhancement: The Endless Gift)</p>
-        <p>Anvil: 6x Bloodcrushers (led by Skullmaster)</p>
-        <p>Objective Holders: 10x Pink Horrors (with Icon & Instrument)</p>
-        <p>Objective Holders: 10x Plaguebearers (with Icon & Instrument)</p>
-        <p>Trade Units: 3x Fiends of Slaanesh<br>
-        Trade Units: 5x Flesh Hounds</p>
-        <p>Anti-Tank: Shalaxi Helbane</p>
-        <p>Secondary Scorers: 1x Nurglings</p>
-        <p>Secondary Scorers: 1x Nurglings</p>
-        <p>Punchback: Skarbrand</p>
-        <p>Transport: N/A (Daemons use the "Warp Rift" as their transport)</p>
-        
-        <p>2. Role Breakdown</p>
-        
-        <p>Leader: Be'lakor, The Dark Master<br>
-        Be'lakor is the most vital piece of the puzzle. His Shadow of Chaos aura acts as a "mobile fortress." He provides an 18" bubble that prevents enemies from targeting your units unless they are within 12" (Lone Operative for everyone nearby). He is the strategic heart that allows your fragile melee units to reach the front lines.</p>
-        
-        <p>Objective Holders: Pink Horrors & Plaguebearers<br>
-        Pink Horrors: The ultimate "annoyance" objective holders. Because they Split into Blue Horrors and then Brimstone Horrors, it takes an astronomical amount of fire to actually remove them from a point.<br>
-        Plaguebearers: Their Sticky Objectives rule allows them to infect a point and move on, while their -1 to hit in melee makes them surprisingly durable for a Battleline unit.</p>
-        
-        <p>Trade Units: Fiends & Flesh Hounds<br>
-        Fiends of Slaanesh: These are your "Mage-Hunters." With high speed and a -1 to Hit/Wound aura against psykers, you throw them at an enemy's support units to tie them up for a turn.<br>
-        Flesh Hounds: Cheap, fast, and they have a 5+ Feel No Pain against Mortal Wounds, making them the perfect unit to sacrifice to trigger enemy Overwatch so your big daemons can charge safely.</p>
-        
-        <p>Anti-Tank: Shalaxi Helbane<br>
-        Shalaxi is mathematically the most terrifying duelist in 2026. With full rerolls against Characters, Monsters, and Vehicles, she is your dedicated "Delete" button for enemy Land Raiders, Knights, or Primarchs.</p>
-        
-        <p>Secondary Scorers: Nurglings & The Changeling<br>
-        Nurglings: Still the kings of "Infiltration." They drop into corners to score "Cleanse" and provide a -1 to Hit aura to help your other units survive.<br>
-        The Changeling: A Lone Operative that can force enemy units to fail their shooting or melee attacks. He sits on a backfield objective or moves up to perform actions while being untargetable.</p>
-        
-        <p>Punchback: Skarbrand<br>
-        Skarbrand is your "Nuclear Deterrent." You keep him in the Warp (Reserves). If an enemy unit takes the center objective, Skarbrand Deep Strikes in. His Slaughter and Carnage aura ensures that everything (including your own units) gets extra attacks, but since Skarbrand hits harder than anything else in the game, he usually wins that trade.</p>
-        
-        <p>Anvil: Great Unclean One (with The Endless Gift)<br>
-        This is the hardest unit to kill in the game. With T12, 20+ Wounds, a 4+ Invulnerable save, and a 4+ Feel No Pain (from the enhancement), he simply parks himself in the center of the board. Most opponents will spend three turns trying to kill him and fail.</p>
-        
-        <p>Transport: (The Warp Rift)<br>
-        Daemons do not use vehicles. Instead, they use the Realm of Chaos stratagem to pick up two units at the end of the opponent's turn and put them back into Deep Strike. This allows you to "transport" a Great Unclean One or Pink Horrors from one side of the board to the other instantly.</p>
-        
-        <p>Why this list wins:<br>
-        The list wins through Psychological Warfare and Deployment. By using Be'lakor to protect your army from shooting and using Deep Strike to land exactly where the enemy is weakest, you never fight a "fair" fight. You choose the engagements, and with the Shadow of Chaos buffing your saves, you often survive hits that should have wiped you out.<p/>
+
+      <article id="Chaos_Demons_army" class="accordion-item border text_color">
+        <button onclick="toggleChaos_Demons()" class="examples_button">
+          Chaos Daemons: "The Warp’s Embrace"
+          <span class="icon" id="chaos_demons_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Daemonic Incursion</p>
+          
+          <p>1. The Army List (2,000 pts)</p>
+          
+          <p>Leader: Be'lakor, The Dark Master (Warlord)</p>
+          <p>Leader: Shalaxi Helbane</p>
+          <p>Anvil: Great Unclean One (Enhancement: The Endless Gift)</p>
+          <p>Objective Holders: 10x Pink Horrors</p>
+          <p>Objective Holders: 10x Plaguebearers</p>
+          <p>Trade Units: 5x Flesh Hounds</p>
+          <p>Anti-Tank: Shalaxi Helbane</p>
+          <p>Secondary Scorers: 1x Nurglings</p>
+          <p>Punchback: Skarbrand</p>
+          
+          <p>2. Role Breakdown</p>
+          
+          <p>Leader: Be'lakor, The Dark Master<br>
+          Be'lakor's Shadow of Chaos aura acts as a "mobile fortress," preventing enemies from targeting your units unless they are within 12". He is the strategic heart that allows your fragile melee units to reach the front lines.</p>
+          
+          <p>Anvil: Great Unclean One (with The Endless Gift)<br>
+          This is the hardest unit to kill in the game. With T12, 20+ Wounds, a 4+ Invulnerable save, and a 4+ Feel No Pain, he simply parks himself in the center of the board and refuses to leave.</p>
+          
+          <p>Why this list wins:<br>
+          The list wins through Psychological Warfare and Deployment. By using Be'lakor to protect from shooting and Deep Strike to land where the enemy is weakest, you never fight a "fair" fight.</p>
+        </div>
       </article>
-      <article id="Chaos_Knights_army" class="border text_color">
-        <p>Chaos Knights: "The Terror of House Herpetrax"<br>
-          Detachment: Dread Talons</p>
+
+      <article id="Chaos_Knights_army" class="accordion-item border text_color">
+        <button onclick="toggleChaos_Knights()" class="examples_button">
+          Chaos Knights: "The Terror of House Herpetrax"
+          <span class="icon" id="chaos_knights_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Dread Talons</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
@@ -817,677 +799,427 @@
           <p>Anvil: Knight Rampager</p>
           <p>Anti-Tank: War Dog Brigand</p>
           <p>Anti-Tank: War Dog Brigand</p>
-          <p>Anti-Tank: War Dog Brigand</p>
           <p>Trade Units: War Dog Karnivore</p>
           <p>Trade Units: War Dog Karnivore</p>
-          <p>Trade Units: War Dog Karnivore</p>
-          <p>Objective Holders: War Dog Stalker (with Daemonbreath Spear)</p>
-          <p>Objective Holders: War Dog Stalker (with Daemonbreath Spear)</p>
-          <p>Secondary Scorers: 1x Nurglings (Allied Daemons)</p>
-          <p>Secondary Scorers: 1x Nurglings (Allied Daemons)</p>
-          <p>Punchback: War Dog Karnivore</p>
-          <p>Transport: N/A (Knights cannot embark, but the Stalkers act as the "Tactical Delivery" for the Dread Aura.)</p>
+          <p>Objective Holders: War Dog Stalker</p>
+          <p>Secondary Scorers: 1x Nurglings</p>
+          <p>Punchback: War Dog Karnivore (Reserve)</p>
           
           <p>2. Role Breakdown</p>
           
           <p>Leader: Knight Abominant<br>
-          The Abominant is your psychic lynchpin. In the Dread Talons detachment, his Vortex Terrors ability forces Battle-shock tests in the Shooting phase. With the Touch of Pandemonium enhancement, he increases the range of his Dread Aura, ensuring that enemies are constantly -1 to hit and failing Leadership tests across the board.</p>
-          
-          <p>Objective Holders: War Dog Stalkers<br>
-          While standard Knights struggle with OC, the Stalker is the "Character" of the War Dog world. They have the durability to sit on a point, and their Isolate and Destroy rule gives them buffs when targeting units that are alone on objectives. They are the anchors of your mid-board.</p>
-          
-          <p>Trade Units: War Dog Karnivores<br>
-          With a 14" move and Slaughterclaw melee profile, Karnivores are your "Seek and Destroy" pieces. In the 2026 meta, you throw a Karnivore at an enemy's most expensive unit. Even if the Karnivore dies, it usually takes out a unit worth double its points or forces the opponent to waste their entire turn dealing with it.</p>
+          The Abominant is your psychic lynchpin. His Vortex Terrors ability forces Battle-shock tests, ensuring that enemies are constantly -1 to hit and failing Leadership tests across the board.</p>
           
           <p>Anti-Tank: War Dog Brigands<br>
-          Brigands are widely considered the best unit in the codex. Their Avenger Chaincannon and Daemonbreath Spear give them a "dual-threat" profile. They gain +1 to hit against the closest target, making their S12 anti-tank shots incredibly reliable at deleting enemy armor.</p>
-          
-          <p>Secondary Scorers: Nurglings<br>
-          Since Knights have very few models, you cannot afford to have a 150-point War Dog sitting in a corner doing an action. Nurglings are essential "Action Monkeys." They infiltrate to score "Cleanse" or "Deploy Teleport Homers," allowing your big guns to keep shooting.</p>
-          
-          <p>Punchback: War Dog Karnivore (Reserve)<br>
-          Keep at least one Karnivore in Strategic Reserves. When an enemy Anvil unit (like a Tyranid Maleceptor or Aeldari Avatar) commits to the center, you bring this Karnivore in from the flank. With Tank Shock and its S14 claws, it provides the massive burst of damage needed to reclaim the board.</p>
-          
-          <p>Anvil: Knight Rampager<br>
-          The Rampager is a T12, 22-wound monster that forces the opponent to target it. It has the Frenzy keyword, meaning it gets better as it takes damage. You run this straight at the largest concentration of enemy fire; its job is to absorb all the "Anti-Tank" shots so your War Dogs stay alive to win the game on points.</p>
-          
-          <p>Transport: (The "Tactical Carry")<br>
-          While Chaos Knights don't use Transports, they use the "Knights of Shade" stratagem to act as their own transport mechanism. This allows them to move through walls and models as if they weren't there, effectively "transporting" 400 points of steel directly into the enemy's squishy backline.</p>
+          Brigands are the best unit in the codex. They gain +1 to hit against the closest target, making their S12 anti-tank shots incredibly reliable at deleting enemy armor.</p>
           
           <p>Why this list wins:<br>
-          It wins through Target Saturation. If the opponent shoots the Brigands, the Karnivores reach their lines and shred them. If they shoot the Rampager, the Brigands delete their tanks. All the while, the Dread Aura is forcing Battle-shock, which means the opponent cannot use Defensive Stratagems to save themselves.<p/>
+          It wins through Target Saturation. If the opponent shoots the Brigands, the Karnivores reach their lines and shred them. If they shoot the Rampager, the Brigands delete their tanks.</p>
+        </div>
       </article>
-      <article id="Chaos_Space_Marines_army" class="border text_color">
-        <p>Chaos Space Marines: "Reavers of the Eye"<br>
-          Detachment: Renegade Raiders</p>
+
+      <article id="Chaos_Space_Marines_army" class="accordion-item border text_color">
+        <button onclick="toggleChaos_Space_Marines()" class="examples_button">
+          Chaos Space Marines: "Reavers of the Eye"
+          <span class="icon" id="chaos_space_marines_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Renegade Raiders</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
           <p>Leader: Chaos Lord (Warlord, Mark of Khorne, Enhancement: Mark of the Hound)</p>
           <p>Leader: Master of Executions (attached to Chosen)</p>
-          <p>Leader: Fabius Bile (attached to Chosen)</p>
           <p>Anvil: Land Raider (Soulshatter Lascannons)</p>
-          <p>Anvil: 10x Chaos Chosen (Power Weapons & Plasma Pistols)</p>
-          <p>Objective Holders: 10x Cultist Mob (Firearms)</p>
-          <p>Objective Holders: 10x Cultist Mob (Firearms)</p>
-          <p>Trade Units: 5x Warp Talons<br>
-          Trade Units: 5x Warp Talons</p>
-          <p>Anti-Tank: Chaos Vindicator (Demolisher Cannon)</p>
-          <p>Anti-Tank: Chaos Vindicator (Demolisher Cannon)</p>
+          <p>Anvil: 10x Chaos Chosen (Power Weapons)</p>
+          <p>Objective Holders: 10x Cultist Mob</p>
+          <p>Trade Units: 5x Warp Talons</p>
+          <p>Anti-Tank: Chaos Vindicator</p>
           <p>Secondary Scorers: 5x Chaos Raptors</p>
-          <p>Secondary Scorers: 1x Nurglings (Allied Daemons)</p>
-          <p>Punchback: 10x Chaos Legionaries (with Chainswords & Heavy Melee Weapons)</p>
-          <p>Transport: Chaos Rhino<br>
-          Transport: Chaos Rhino</p>
+          <p>Punchback: 10x Chaos Legionaries</p>
+          <p>Transport: Chaos Rhino</p>
           
           <p>2. Role Breakdown</p>
           
           <p>Leader: Chaos Lord (with Mark of the Hound)<br>
-          The Chaos Lord is your tactical engine. The Mark of the Hound enhancement grants his attached unit Scout 6", which, when combined with a dedicated Transport, allows you to threaten the center board before the first turn even begins. His Chance for Glory ability allows him to use a Stratagem for 0CP, typically used for unrelenting onslaught.</p>
-          
-          <p>Objective Holders: Cultist Mobs<br>
-          The unsung heroes of Chaos. Their Sticky Objectives rule allows them to touch a point and then move away to screen out Deep Strikers. In the 2026 meta, you need these to keep your Primary score ticking while your expensive units go hunting.</p>
-          
-          <p>Trade Units: Warp Talons<br>
-          Warp Talons are the premier "Predator" unit. With their Warp Strike ability, they can go back into Strategic Reserves after they destroy a unit in melee. You send them in to kill an enemy's secondary scorer (like Aeldari Rangers or Tau Vespids) and then "flicker" off the board to stay safe.</p>
-          
-          <p>Anti-Tank: Chaos Vindicators<br>
-          The Vindicator is the hammer. In the Renegade Raiders detachment, these gain extra AP when shooting at targets on objectives. Since the Demolisher Cannon is already S14 with high damage, it becomes a "Delete Button" for enemy Land Raiders or Necron Monoliths.</p>
-          
-          <p>Secondary Scorers: Raptors & Nurglings<br>
-          Raptors: Their 12" move and ability to force Battleshock tests make them excellent for stealing points or landing in a corner for "Behind Enemy Lines.<br>
-          Nurglings: These are purely for "Infiltrating" to block enemy Scout moves and scoring "Cleanse" early on.</p>
-          
-          <p>Punchback: 10-man Legionaries (in Rhino)<br>
-          Legionaries gain full rerolls to wound when attacking units on an objective. If your opponent manages to take a point from you, this unit disembarks from their Rhino and uses their chainswords to mathematically erase the intruders.</p>
+          The Chaos Lord grants his unit Scout 6", allowing you to threaten the center board early. His Chance for Glory ability allows him to use a Stratagem for 0CP.</p>
           
           <p>Anvil: 10-man Chosen (with Fabius Bile & Land Raider)<br>
-          This is the "Death Star." Fabius Bile increases the Toughness and Strength of the Chosen, making them T5. Combined with the Land Raider’s T12 chassis and the Assault Ramp (which lets them charge after the tank moves), they are a brick that can take the center and hold it against almost anything.</p>
-          
-          <p>Transport: Chaos Rhinos<br>
-          In Raiders, Rhinos grant the units inside Full Rerolls to Hit if the unit disembarks and shoots at a target on an objective. They aren't just taxis; they are mobile combat stims that ensure your Legionaries and Chosen never miss.</p>
+          This is the "Death Star." Fabius Bile increases the Toughness and Strength of the Chosen. Combined with the Land Raider’s Assault Ramp, they can take the center and hold it against almost anything.</p>
           
           <p>Why this list wins:<br>
-          It plays the "Objective Pressure" game better than almost any other army. Because the detachment grants +1 AP to everyone shooting at targets on objectives, the opponent is punished for trying to play the mission. You force them to hide; if they hide, you win on points. If they come out, you use your Assault Ramps and Scout moves to crush them.<p/>
+          It plays the "Objective Pressure" game perfectly. Because the detachment grants +1 AP to everyone shooting at targets on objectives, the opponent is punished for trying to play the mission.</p>
+        </div>
       </article>
-      <article id="Death_Guard_army" class="border text_color">
-        <p>Death Guard: "The Walking Blight"<br>
-          Detachment: Plague Company</p>
+      <article id="Death_Guard_army" class="accordion-item border text_color">
+        <button onclick="toggleDeath_Guard()" class="examples_button">
+          Death Guard: "The Walking Blight"
+          <span class="icon" id="death_guard_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Plague Company</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
           <p>Leader: Mortarion, Daemon Primarch of Nurgle (Warlord)</p>
           <p>Leader: Typhus (attached to 20x Poxwalkers)</p>
           <p>Leader: Foul Blightspawn (attached to Plague Marines)</p>
-          <p>Anvil: 3x Deathshroud Terminators (led by Typhus or Lord of Contagion)</p>
+          <p>Anvil: 3x Deathshroud Terminators</p>
           <p>Anvil: Plagueburst Crawler (Plagueburst Mortar & Entropy Cannons)</p>
-          <p>Objective Holders: 7x Plague Marines (with Bubotic Weapons & Plague Belchers)</p>
-          <p>Objective Holders: 20x Poxwalkers<br>
-          Trade Units: 1x Foetid Bloat-drone (Fleshmower)</p>
+          <p>Objective Holders: 7x Plague Marines (with Bubotic Weapons)</p>
+          <p>Objective Holders: 20x Poxwalkers</p>
           <p>Trade Units: 1x Foetid Bloat-drone (Fleshmower)</p>
           <p>Anti-Tank: Plagueburst Crawler (Plagueburst Mortar & Entropy Cannons)</p>
           <p>Secondary Scorers: 2x 3x Deathshroud Terminators (Deep Strike)</p>
-          <p>Secondary Scorers: 1x Nurglings (Allied)</p>
           <p>Punchback: 10x Plague Marines (led by Foul Blightspawn & Biologus Putrifier)</p>
-          <p>Transport: Chaos Rhino<br>
-          Transport: Chaos Rhino</p>
+          <p>Transport: Chaos Rhino</p>
           
           <p>2. Role Breakdown</p>
           
           <p>Leader: Mortarion<br>
-          Mortarion is the "Anchor." His Lord of the Death Guard aura allows friendly units within 6" to ignore any and all modifiers to their characteristics or rolls (including the "Armor of Contempt" or -1 damage rules). He ensures your army hits with 100% of its theoretical math while providing a massive T12 flying threat.</p>
-          
-          <p>Objective Holders: Poxwalkers & 7-man Plague Marines<br>
-          Poxwalkers: Led by Typhus, these become a "regenerating screen." Typhus’s Eater Plague deals mortal wounds to enemies nearby, while the Poxwalkers act as a 20-wound meat shield that keeps the home objective secure.<br>
-          Plague Marines: Specifically kitted for defense, they sit on "Infected" objectives. In this detachment, an infected objective grants them a 5+ Critical Hit, making their defensive fire surprisingly lethal.</p>
-          
-          <p>Trade Units: Foetid Bloat-drones<br>
-          The Fleshmower drone is a "Turn One" disruptor. With a 10" move and the Fall Back and Charge ability, it crashes into the enemy's scouts or light infantry. You expect the drone to explode (which it does on a 4+, dealing mortals), trading its 90 points for the opponent's momentum.</p>
-          
-          <p>Anti-Tank: Plagueburst Crawlers (PBC)<br>
-          The PBC is the premier indirect fire platform. While the Mortar suppresses infantry, the Entropy Cannons (now S12 in 2026) benefit from the -1 Toughness contagion. This means your "Anti-Tank" is effectively hitting T12 targets as if they were T11, significantly increasing your conversion rate.</p>
-          
-          <p>Secondary Scorers: Deathshroud Terminators & Nurglings<br>
-          Deathshroud: By keeping small 3-man units in Deep Strike, you can drop them into the backline for "Behind Enemy Lines." Their S6 flamers mean they can clear out small objective holders (like Gretchin or Cultists) the moment they arrive.<br>
-          Nurglings: The classic "0-point" (low cost) infiltrators used to screen out enemy scouts and score early "Cleanse" points.</p>
+          Mortarion is the "Anchor." His aura allows friendly units to ignore characteristics modifiers. He ensures your army hits with 100% of its theoretical math while providing a massive T12 flying threat.</p>
           
           <p>Punchback: 10-man Plague Marine "Biology Lab"<br>
-          This unit lives in a Rhino with a Foul Blightspawn and Biologus Putrifier. The Blightspawn grants the unit</p>
+          This unit lives in a Rhino with a Foul Blightspawn and Biologus Putrifier. The Blightspawn grants the unit Fights First, while the Putrifier grants Critical Hits on a 5+, turning them into a lethal counter-charge deterrent.</p>
+          
+          <p>Why this list wins:<br>
+          It wins through Durability and Aura Manipulation. By stacking -1 Toughness contagions and ignoring enemy defensive modifiers via Mortarion, the Death Guard becomes an inevitable, slow-moving wall of death.</p>
+        </div>
       </article>
-      <article id="Emperors_Children_army" class="border text_color">
-        <p>Emperor’s Children: "The Chorus of the Damned"<br>
-          Detachment: Symphony of Excess</p>
+
+      <article id="Emperors_Children_army" class="accordion-item border text_color">
+        <button onclick="toggleEmperors_Children()" class="examples_button">
+          Emperor’s Children: "The Chorus of the Damned"
+          <span class="icon" id="emperors_children_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Symphony of Excess</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
-          <p>Leader: Fulgrim the Palatine (Warlord, Primarch of the III Legion)</p>
+          <p>Leader: Fulgrim the Palatine (Warlord)</p>
           <p>Leader: Lucius the Eternal (attached to Noise Marines)</p>
-          <p>Leader: Master of Executions (Enhancement: Sensory Overload)</p>
-          <p>Anvil: 5x Phoenix Terminators (Accursed Weapons & Sonic Blasters)</p>
-          <p>Anvil: Helbrute (Twin Blastmaster & Power Scourge)</p>
-          <p>Objective Holders: 10x Noise Marines (Sonic Blasters & 1x Blastmaster)</p>
-          <p>Objective Holders: 10x Noise Marines (Sonic Blasters & 1x Blastmaster)</p>
-          <p>Trade Units: 5x Chosen (with Dual Accursed Weapons)</p>
-          <p>Trade Units: 5x Chosen (with Dual Accursed Weapons)</p>
-          <p>Anti-Tank: Chaos Vindicator (Demolisher Cannon)</p>
-          <p>Secondary Scorers: 10x Chaos Cultists (Mark of Slaanesh)</p>
+          <p>Anvil: 5x Phoenix Terminators</p>
+          <p>Objective Holders: 10x Noise Marines</p>
+          <p>Trade Units: 5x Chosen</p>
+          <p>Anti-Tank: Chaos Vindicator (Sonic Resonator upgrade)</p>
           <p>Secondary Scorers: 5x Seekers (Allied Daemons)</p>
-          <p>Punchback: 10x Noise Marines (All Sonic Blasters, led by Lucius)</p>
-          <p>Transport: Chaos Rhino (with Dirge Caster)<br>
-          Transport: Chaos Rhino (with Dirge Caster)</p>
+          <p>Punchback: 10x Noise Marines (led by Lucius)</p>
+          <p>Transport: Chaos Rhino (with Dirge Caster)</p>
           
           <p>2. Role Breakdown</p>
           
           <p>Leader: Fulgrim the Palatine<br>
-          The Phoenician is the ultimate "force multiplier." His Sublime Duelist ability allows him to force an enemy unit to Fight Last. In a melee-heavy meta, ensuring your army swings first is the difference between a win and a wipe. He also generates extra Command Points whenever he destroys a character in a challenge.</p>
+          The ultimate "force multiplier." His Sublime Duelist ability forces enemies to Fight Last. In a melee-heavy meta, ensuring your army swings first is the difference between a win and a wipe.</p>
           
           <p>Objective Holders: Noise Marines<br>
-          Unlike standard Legionaries, Noise Marines have the Disruptive Song rule. Any enemy unit within 6" of them suffers -1 to their Objective Control (OC) characteristic. This allows the III Legion to steal objectives even if they are outnumbered, simply by being loud and obnoxious.</p>
-          
-          <p>Trade Units: Chosen<br>
-          The Emperor's Children version of Chosen is focused on the Perfect Strike. With their inherent ability to Advance and Charge, they are used to hit an enemy's flank early. You trade them to pull the opponent out of position, knowing that their high volume of attacks will likely cripple whatever they touch before they fall.</p>
-          
-          <p>Anti-Tank: Chaos Vindicator<br>
-          While the legion loves sonic weaponry, the Demolisher Cannon remains their best answer to heavy T12 armor. In the 2026 meta, the Vindicator is often equipped with the Sonic Resonator upgrade (via detachment rules), allowing its shots to ignore Cover.</p>
-          
-          <p>Secondary Scorers: Seekers & Cultists<br>
-          Seekers: These Allied Slaanesh Daemons have a 14" move and Scout. They are your primary "Signal" and "Homer" units, reaching the corners of the board before the opponent has even finished their first movement phase.<br>
-          Cultists: Purely there to "Sticky" the home objective and then run forward to screen for the Rhinos.</p>
-          
-          <p>Punchback: Lucius + 10 Noise Marines<br>
-          This is your "Reactive Scalpel." Lucius grants his unit Fights First. When an opponent charges your front line, Lucius and his Noise Marines (who have been safely tucked in a Rhino) disembark and shred the attackers. If Lucius is killed, his Armour of Shrieking Souls has a high chance of dealing mortal wounds back to the killer and bringing him back to life.</p>
-          
-          <p>Anvil: Phoenix Terminators<br>
-          The Phoenix Guard are the "Toughness Check" of the army. With a 2+ save, 4+ invulnerable, and a special rule called Elegant Deflection that reduces the AP of incoming melee attacks, they sit on the center objective and are effectively the most "stubborn" unit in a faction otherwise known for speed.</p>
-          
-          <p>Transport: Chaos Rhino (with Dirge Caster)<br>
-          The Dirge Caster is essential; it prevents the enemy from using Overwatch on the unit disembarking. This ensures your Noise Marines and Lucius get into combat without taking "chip damage" from flamers or bolters during the charge.</p>
+          Noise Marines utilize the Disruptive Song rule, causing enemies within 6" to suffer -1 Objective Control (OC). This allows the III Legion to steal objectives even when outnumbered.</p>
           
           <p>Why this list wins:<br>
-          The Emperor's Children win through Tempo Control. By utilizing Fights First and Fight Last mechanics, they dictate exactly how the Fight Phase unfolds. They don't need the raw durability of Death Guard or the numbers of World Eaters because they simply kill the opponent before the opponent is allowed to swing back.<p/>
+          The Emperor's Children win through Tempo Control. By utilizing Fights First and Fight Last mechanics, they dictate the Fight Phase, killing the opponent before they can swing back.</p>
+        </div>
       </article>
-      <article id="Thousand_Sons_army" class="border text_color">
-        <p>Thousand Sons: "The Crystal Labyrinth"<br>
-          Detachment: Cult of Magic</p>
+
+      <article id="Thousand_Sons_army" class="accordion-item border text_color">
+        <button onclick="toggleThousand_Sons()" class="examples_button">
+          Thousand Sons: "The Crystal Labyrinth"
+          <span class="icon" id="thousand_sons_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Cult of Magic</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
           <p>Leader: Magnus the Red (Warlord)</p>
-          <p>Leader: Ahriman on Disc of Tzeentch (attached to 10 Rubrics)</p>
+          <p>Leader: Ahriman on Disc of Tzeentch</p>
           <p>Leader: Infernal Master (Enhancement: Arcane Vortex)</p>
-          <p>Anvil: 5x Scarab Occult Terminators (Prosperine Khopesh & Inferno Combi-bolters)</p>
-          <p>Anvil: Mutalith Vortex Beast<br>
-          Objective Holders: 10x Rubric Marines (Warpsmite & Soulreaper Cannon)<br>
-          Objective Holders: 10x Tzaangors (with Tzaangor Blades)</p>
+          <p>Anvil: Mutalith Vortex Beast</p>
+          <p>Objective Holders: 10x Rubric Marines</p>
           <p>Trade Units: 5x Rubric Marines (All Warpflamers)</p>
-          <p>Trade Units: 5x Rubric Marines (All Warpflamers)</p>
-          <p>Anti-Tank: Magnus the Red (Psychic Blade & Gaze of Magnus)</p>
-          <p>Secondary Scorers: 3x Tzaangor Enlightened (Greatbows)</p>
-          <p>Secondary Scorers: 1x Thousand Sons Chaos Spawn</p>
-          <p>Punchback: 10x Rubric Marines (All Warpflamers, led by Ahriman)</p>
-          <p>Transport: Chaos Rhino<br>
-          Transport: Chaos Rhino</p>
+          <p>Anti-Tank: Magnus the Red</p>
+          <p>Secondary Scorers: 3x Tzaangor Enlightened</p>
+          <p>Punchback: 10x Rubric Marines (led by Ahriman)</p>
+          <p>Transport: Chaos Rhino</p>
           
           <p>2. Role Breakdown</p>
           
-          <p>Leader: Infernal Master (with Arcane Vortex)<br>
-          This is the army's secret weapon. The Arcane Vortex enhancement turns his psychic flamer into a high-strength, high-damage monster. He generates 2 CaP and is your primary source of "free" damage against elite infantry.</p>
-          
-          <p>Objective Holders: Tzaangors & Rubrics<br>
-          Tzaangors: These are the cheapest way to "screen" your backline. Their Relic Hunters ability allows them to potentially generate an extra CaP if they are standing on an objective.<br>
-          Rubrics: With their 5+ Invulnerable save and the ability to reroll Wound rolls of 1 (or full rerolls if the target is on an objective), they are remarkably efficient at holding ground against light infantry.</p>
-          
-          <p>Trade Units: 5-man Warpflamer Rubrics<br>
-          These are "Overwatch Mines." You move them aggressively toward an enemy-held objective. If the enemy charges, the flamers (which benefit from the detachment's +1 Strength to psychic weapons) melt them. If they die, it’s only a small loss of CaP.</p>
-          
-          <p>Anti-Tank: Magnus the Red<br>
-          In 2026, Magnus remains the premier anti-tank tool for the sons of Magnus. With his ability to reduce incoming damage to 0 once per turn and his S14 melee attacks, he can go toe-to-toe with any Knight or Land Raider. He is also the primary source of +2 to hit/wound for nearby units.</p>
-          
-          <p>Secondary Scorers: Tzaangor Enlightened & Chaos Spawn<br>
-          Enlightened: Their 12" move and ability to fly make them perfect for scoring "Signal" actions.<br>
-          Chaos Spawn: Used as a 1-man unit to hide behind a wall and score "Cleanse" or "Teleport Homers." At T5 with 4 wounds, they require more effort to kill than the opponent wants to spend.</p>
+          <p>Anvil: Mutalith Vortex Beast<br>
+          Your "Physical Wall." With T10 and a 5+ Feel No Pain, it's the hardest non-primarch unit to kill. Its aura doubles the range of Cabal Rituals, making it the strategic center of the army.</p>
           
           <p>Punchback: Ahriman + 10 Warpflamers<br>
-          Ahriman allows you to use one Cabal Ritual for 0 CaP once per game. You use this for the "Twist of Fate" ritual to remove an enemy's Armor Save. Combined with 10 Warpflamers, this unit can incinerate an entire squad of Terminators or a light tank in a single "Punchback" activation.</p>
-          
-          <p>Anvil: Mutalith Vortex Beast<br>
-          The Mutalith is your "Physical Wall." With T10, 14 Wounds, and a 5+ Feel No Pain, it’s the hardest non-primarch unit to kill in the codex. Its Warp Vortex aura also doubles the range of your Cabal Rituals, making it the strategic center of the army.</p>
-          
-          <p>Transport: Chaos Rhino<br>
-          Critical for protecting the Infernal Master and Rubric squads. Since Thousand Sons rely on their characters staying alive to generate Cabal Points, the Rhino acts as a "Cabal Battery" protector until the mid-game.</p>
+          Ahriman allows a free "Twist of Fate" ritual once per game to remove an enemy's Armor Save. Combined with 10 Warpflamers, this unit can incinerate a tank in a single activation.</p>
           
           <p>Why this list wins:<br>
-          The Thousand Sons win in the Shooting Phase. By using the "Temporal Surge" ritual, you can move units twice, allowing you to jump out from behind a wall, shoot with full efficiency, and then move back into safety. It is a "non-interactive" style of play that punishes any opponent who leaves their valuable units exposed for even a second.<p/>
+          Thousand Sons win by being "non-interactive." Between Temporal Surge (moving twice) and high-AP psychic fire, they pop out from cover, delete a unit, and disappear back into safety.</p>
+        </div>
       </article>
-      <article id="World_Eaters_army" class="border text_color">
-        <p>World Eaters: "The Butcher’s Banquet"<br>
-          Detachment: Berzerker Warband</p>
+
+      <article id="World_Eaters_army" class="accordion-item border text_color">
+        <button onclick="toggleWorld_Eaters()" class="examples_button">
+          World Eaters: "The Butcher’s Banquet"
+          <span class="icon" id="world_eaters_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Berzerker Warband</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
           <p>Leader: Angron, Daemon Primarch of Khorne (Warlord)</p>
           <p>Leader: Lord Invocatus</p>
-          <p>Leader: Khârn the Betrayer (attached to Berzerkers)</p>
-          <p>Anvil: 10x Khorne Berzerkers (with Icon of Khorne)</p>
-          <p>Anvil: Khorne Lord on Juggernaut (Enhancement: Berzerker Glaive)</p>
-          <p>Objective Holders: 10x Jakhals (with Dishonoured)</p>
-          <p>Objective Holders: 10x Jakhals (with Dishonoured)</p>
-          <p>Trade Units: 3x Eightbound<br>
-          Trade Units: 3x Eightbound</p>
-          <p>Anti-Tank: Chaos Predator Destructor (with Lascannons)</p>
+          <p>Leader: Khârn the Betrayer</p>
+          <p>Anvil: 10x Khorne Berzerkers (with Icon)</p>
+          <p>Objective Holders: 10x Jakhals</p>
+          <p>Trade Units: 3x Eightbound</p>
+          <p>Anti-Tank: Chaos Predator Destructor</p>
           <p>Secondary Scorers: 5x Chaos Spawn</p>
-          <p>Secondary Scorers: 10x Chaos Cultists (Allied)</p>
           <p>Punchback: 6x Exalted Eightbound</p>
-          <p>Transport: Chaos Rhino<br>
-          Transport: Chaos Rhino</p>
+          <p>Transport: Chaos Rhino</p>
           
           <p>2. Role Breakdown</p>
           
           <p>Leader: Angron<br>
-          Angron is the ultimate "distraction" and leader. His Wrathful Presence auras provide vital buffs (like rerolling hits), but his real power is his ability to be reborn via the Blessings of Khorne. He forces the opponent to commit their entire Anti-Tank arsenal to him, which saves the rest of your army from being shot.</p>
-          
-          <p>Objective Holders: Jakhals<br>
-          These are your "Sticky Objective" units. For a tiny point cost, they capture a point and then move forward, leaving the objective under your control even if they leave it. Their Objective Secured and low profile make them perfect for sitting in cover while the "real" killers do the work.</p>
-          
-          <p>Trade Units: Eightbound (Standard)<br>
-          Regular Eightbound are your scalpel. With high movement and a "Scout" move granted by Lord Invocatus, they hit the enemy's screen (like Gretchin or Kroot) on turn one. You expect them to die, but they clear the way for your Exalted Eightbound and Angron to hit the "good" targets.</p>
-          
-          <p>Anti-Tank: Chaos Predator Destructor<br>
-          World Eaters often struggle with long-range fire. The Predator Destructor with Lascannons provides consistent S12 shots to soften up enemy Transports or Knights. It forces the opponent to stay behind cover rather than freely kiting your melee units.</p>
-          
-          <p>Secondary Scorers: Chaos Spawn<br>
-          With their Regenerating Horrors and high movement speed, Spawn are the perfect "Action Monkeys." They can hide behind ruins to score "Cleanse" or "Deploy Teleport Homers." They are surprisingly difficult to kill with small arms, often requiring the opponent to waste a high-quality unit's shooting to clear them.</p>
+          Angron is the ultimate distraction. His real power is being reborn via the Blessings of Khorne, forcing the opponent to waste their entire arsenal on him while your army moves up.</p>
           
           <p>Punchback: Exalted Eightbound<br>
-          These are your "insurance policy." You keep them in Deep Strike or behind a central ruin. If an enemy Anvil (like Necron Wraiths or Marine Terminators) moves onto a center point, the Exalted Eightbound charge in. With their Feel No Pain and massive Strength, they are the hardest-hitting melee unit in the codex.</p>
-          
-          <p>Anvil: 10x Khorne Berzerkers (with Khârn)<br>
-          In a Rhino, this unit is surprisingly tanky. Once they disembark, they have a high model count and a Blood Icon that helps you manipulate your Blessing dice. They are the "Meat Shield" that holds the mid-board, daring the enemy to charge them so they can benefit from Blood Surge (moving closer when shot).</p>
-          
-          <p>Transport: Chaos Rhino<br>
-          In the 2026 meta, a World Eater on foot is a dead World Eater. The Rhino is essential for protecting Khârn and his Berzerkers from turn-one indirect fire or high-volume small arms fire. It also serves as a physical LoS (Line of Sight) blocker after the troops jump out.</p>
+          The "insurance policy." With massive Strength and Feel No Pain, they drop from Deep Strike to reclaim center points from the toughest enemy anvils.</p>
           
           <p>Why this list wins:<br>
-          It creates a "Threat Overload." Turn one, the opponent has to deal with Lord Invocatus and Eightbound in their face. Turn two, they have to deal with Angron and Exalted Eightbound. By turn three, even if the opponent has killed half your army, the Jakhals have already secured a massive lead on Primary points. It is an army that wins by being too violent to ignore and too fast to kite.<p/>
+          It wins through Threat Overload. By turn two, the opponent is smothered by Angron and Eightbound, while Jakhals quietly secure a massive lead on primary points.</p>
+        </div>
       </article>
-      <article id="Aeldari_army" class="border text_color">
-        <p>Aeldari: "The Wind of Fate"<br>
-          Detachment: Battle Host</p>
+
+      <article id="Aeldari_army" class="accordion-item border text_color">
+        <button onclick="toggleAeldari()" class="examples_button">
+          Aeldari: "The Wind of Fate"
+          <span class="icon" id="aeldari_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Battle Host</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
           <p>Leader: The Avatar of Khaine (Warlord)</p>
           <p>Leader: Farseer (Enhancement: The Weeping Stones)</p>
           <p>Leader: Fuegan (The Burning Lance)</p>
-          <p>Anvil: The Avatar of Khaine</p>
           <p>Anvil: 10x Wraithguard (Wraithcannons)</p>
-          <p>Objective Holders: 10x Guardian Defenders (with Bright Lance Platform)</p>
-          <p>Trade Units: 5x Howling Banshees<br>
-          Trade Units: 5x Striking Scorpions</p>
-          <p>Anti-Tank: Fire Prism<br>
-          Anti-Tank: War Walker (2x Bright Lances)</p>
-          <p>Secondary Scorers: 5x Swooping Hawks<br>
-          Secondary Scorers: 5x Rangers</p>
+          <p>Objective Holders: 10x Guardian Defenders</p>
+          <p>Trade Units: 5x Howling Banshees</p>
+          <p>Anti-Tank: Fire Prism</p>
+          <p>Secondary Scorers: 5x Swooping Hawks</p>
           <p>Punchback: 5x Fire Dragons (Led by Fuegan)</p>
-          <p>Transport: Wave Serpent (Twin Bright Lances)</p>
-          <p>Transport: Falcon (Pulse Laser & Bright Lance)</p>
+          <p>Transport: Falcon (Pulse Laser)</p>
           
           <p>2. Role Breakdown</p>
           
-          <p>Leader: Farseer<br>
-          The Farseer is the most important unit in the list. His Branching Fates ability allows you to turn one Fate Die into a 6 once per turn. In a world where one missed shot can lose a game, the Farseer ensures your Bright Lances always hit their mark. He usually stays hidden near the Guardians to provide a -1 to Wound buff to a nearby unit.</p>
-          
-          <p>Objective Holders: Guardian Defenders<br>
-          While squishy, they serve a vital purpose: generating Fate Dice. By sitting on the home objective, they keep your resource pool full. The Bright Lance on their platform also benefits from the detachment rerolls, making them a legitimate threat to anyone trying to deep strike your backline.<br>
-          Trade Units: Striking Scorpions & Howling Banshees<br>
-          Scorpions: With Infiltrate and Stealth, they start in the mid-board to move-block the enemy or harass small units.<br>
-          Banshees: Used as a turn-one or turn-two "missile." They jump out, charge a unit to tie it up or kill a key infantry piece, and then die to return fire. You traded 70-80 points to stop your opponent's 200-point unit from moving forward.</p>
-          
-          <p>Anti-Tank: Fire Prism & War Walker<br>
-          Fire Prism: Utilizing the Linked Fire stratagem, it can shoot and then move back behind a wall (using Fire and Fade), making it impossible for the opponent to shoot back.<br>
-          War Walker: With a -1 to Wound and a 4+ invulnerable save, this is one of the most points-efficient "annoyance" units in the game that happens to carry two S12 Bright Lances.</p>
-          
-          <p>Secondary Scorers: Swooping Hawks & Rangers<br>
-          Swooping Hawks: Their ability to leave the battlefield and go into reserves at the end of the turn makes them the best "Action Monkeys" in the Aeldari codex. They score "Behind Enemy Lines" effortlessly.<br>
-          Rangers: With Infiltrate and Precision, they sit in ruins to chip away at enemy Leaders or simply score "Cleanse" while being hard to target.</p>
-          
-          <p>Punchback: Fuegan & Fire Dragons<br>
-          This unit is kept inside the Falcon. The Falcon provides a "reroll wounds" buff to anyone getting out of it. Fuegan is a one-man wrecking ball; if he is killed, he has a 2+ chance to stand back up. They are your response to an enemy Land Raider or Great Unclean One moving into the center.</p>
-          
           <p>Anvil: The Avatar of Khaine & Wraithguard<br>
-          Avatar of Khaine: With T12, a 2+ save, and half damage from all attacks, he is the only thing in the Aeldari army that can stand in the open. He is your centerpiece bully.<br>
-          Wraithguard: These are your "reactionary" anvil. Their Warpspite rule allows them to shoot back at any unit that shoots them. Most opponents realize too late that shooting Wraithguard is a death sentence.</p>
+          The Avatar is the only unit that can stand in the open (T12, half damage). Wraithguard act as a reactionary anvil, shooting back at anyone who dares target them.</p>
           
-          <p>Transport: Wave Serpent & Falcon<br>
-          Wave Serpent: Transports the Wraithguard or Banshees while providing high-volume fire and a "Shield Discharge" that can cause mortal wounds and push enemies back.<br>
-          Falcon: Used specifically as a delivery system for the Fire Dragons to maximize their damage output via its "Fire Support" rule.</p>
+          <p>Secondary Scorers: Swooping Hawks<br>
+          The best "Action Monkeys" in the game. Their ability to go into reserves at the end of every turn makes scoring "Behind Enemy Lines" effortless.</p>
           
           <p>Why this list wins:<br>
-          The Aeldari win by refusing to play fair. Between Phantasm (moving in the enemy's turn) and Fire and Fade, you should theoretically never let your opponent shoot your most valuable units. You use the Avatar to hold the center while the rest of your army performs a "disappearing act" every time the enemy tries to retaliate.<p/>
+          Aeldari win by refusing to play fair. Using Phantasm and Fire and Fade, they perform a disappearing act every time the enemy tries to retaliate.</p>
+        </div>
       </article>
-      <article id="Genestealer_Cults_army" class="border text_color">
-        <p>Genestealer Cults: "The Broodsurge Rising"<br>
-          Detachment: Biosanctic Broodsurge</p>
+
+      <article id="Genestealer_Cults_army" class="accordion-item border text_color">
+        <button onclick="toggleGenestealer_Cults()" class="examples_button">
+          Genestealer Cults: "The Broodsurge Rising"
+          <span class="icon" id="genestealer_cults_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Biosanctic Broodsurge</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
           <p>Leader: Patriarch (Warlord, Enhancement: Biomorph Adaptation)</p>
-          <p>Leader: Abominant (attached to Aberrants)<br>
-          Leader: Primus (attached to Neophytes)</p>
-          <p>Anvil: 10x Aberrants (Heavy Power Weapons)<br>
-          Anvil: 10x Aberrants (Heavy Power Weapons)</p>
-          <p>Objective Holders: 20x Neophyte Hybrids (Seismic Cannons & Grenade Launchers)</p>
-          <p>Trade Units: 10x Purestrain Genestealers<br>
-          Trade Units: 5x Acolyte Hybrids (with Demolition Charges)<br>
-          Anti-Tank: Achilles Ridgerunner (Heavy Mining Laser & Spotter)</p>
-          <p>Anti-Tank: Achilles Ridgerunner (Heavy Mining Laser & Spotter)</p>
-          <p>Secondary Scorers: Kelermorph<br>
-          Secondary Scorers: Sanctus (with Silencer Sniper Rifle)</p>
-          <p>Punchback: 10x Hybrid Metamorphs (Hand Flamers)<br>
-          Transport: Goliath Truck<br>
-          Transport: Goliath Truck</p>
+          <p>Leader: Abominant (attached to Aberrants)</p>
+          <p>Leader: Primus (attached to Neophytes)</p>
+          <p>Anvil: 10x Aberrants (Heavy Power Weapons)</p>
+          <p>Objective Holders: 20x Neophyte Hybrids</p>
+          <p>Trade Units: 10x Purestrain Genestealers</p>
+          <p>Anti-Tank: Achilles Ridgerunner (Heavy Mining Laser)</p>
+          <p>Secondary Scorers: Kelermorph</p>
+          <p>Punchback: 10x Hybrid Metamorphs</p>
+          <p>Transport: Goliath Truck</p>
           
           <p>2. Role Breakdown</p>
           
-          <p>Leader: Patriarch<br>
-          In Biosanctic Broodsurge, the Patriarch is a blender. With Biomorph Adaptation, his attacks become devastatingly high-strength and high-damage. He grants his unit of Genestealers Devastating Wounds, allowing them to chew through even Terminator armor or light vehicles.</p>
-          
-          <p>Objective Holders: Neophyte Hybrids<br>
-          Led by a Primus for full hit rerolls, these are your "Primary" scorers. They utilize the Cult Icon to return d3+3 models every turn. In 2026, they are less about damage and more about being a 20-model wall that simply refuses to leave the objective.</p>
-          
-          <p>Trade Units: Purestrain Genestealers & Acolytes<br>
-          Purestrains: With an 8" Infiltrate and the ability to charge turn one, they are the ultimate turn-one pressure tool. They go in, disrupt the enemy's movement, and die—only to potentially return via Cult Ambush.<br>
-          Acolytes: These carry the "Demo Charge" nukes. They Deep Strike 3" away (using the Tunnel Borers stratagem), throw their bombs to delete a high-value target, and then consider their job done.<br>
-          Anti-Tank: Achilles Ridgerunners<br>
-          GSC lacks heavy tanks, so the Ridgerunner is vital. Its Heavy Mining Laser provides the S12 punch needed to threaten armor, but its real value is the Crossfire buff, which grants the rest of your army +1 AP against the target it hits.</p>
-          
-          <p>Secondary Scorers: Kelermorph & Sanctus<br>
-          Kelermorph: The "Lone Operative" king. He can pop up, shoot, and move again, making him perfect for "Secondary" actions while staying safe from return fire.<br>
-          Sanctus: A cheap character hunter that can sit on a backline objective or move up to score "Cleanse" while remaining untargetable beyond 12".</p>
-          
-          <p>Punchback: Hybrid Metamorphs<br>
-          Keep these in a Goliath Truck. When an enemy unit charges and destroys your front-line Neophytes, the Metamorphs spill out. Their Fight on Death rule ensures that even if the enemy is faster, the Metamorphs will always get their swings in to avenge their fallen kin.</p>
-          
           <p>Anvil: Aberrants<br>
-          The "Muscle" of the list. With -1 to damage, a 4+ Feel No Pain, and T6, they are arguably the most durable infantry in the game per point. You shove 10 of these onto a center objective and force the opponent to commit their entire army to move them.</p>
+          The "Muscle." With -1 damage, T6, and a 4+ Feel No Pain, they are the most durable infantry in the game. You park them in the center and dare the opponent to move them.</p>
           
-          <p>Transport: Goliath Truck<br>
-          The Truck isn't just a ride; it’s a mobile bunker. In 2026, its Firing Deck 12 allows the units inside to shoot their demolition charges or flamers safely from behind the truck's toughness. It also provides the "Scout" move needed to get your melee units into position early.</p>
+          <p>Leader: Patriarch<br>
+          A total blender in this detachment. He grants his Genestealers Devastating Wounds, allowing them to chew through Terminator armor or light vehicles with ease.</p>
           
           <p>Why this list wins:<br>
-          The GSC wins the "Resource War." Every time your opponent kills a unit, there is a high probability it returns to the board. By using Aberrants as an immovable center and Genestealers as a high-speed scalpel, you force the opponent into a lose-lose situation: shoot the big monsters and let the small guys score, or shoot the small guys and get crushed by the monsters.<p/>
+          GSC wins the "Resource War." Because units frequently return via Cult Ambush, you force the opponent into a lose-lose situation of targeting scorers or monsters.</p>
+        </div>
       </article>
-      <article id="Votann_army" class="border text_color">
-        <p>Leagues of Votann: "The Gilded Prospect"<br>
-          Detachment: Mercenary Oathband</p>
+
+      <article id="Votann_army" class="accordion-item border text_color">
+        <button onclick="toggleVotann()" class="examples_button">
+          Leagues of Votann: "The Gilded Prospect"
+          <span class="icon" id="votann_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Mercenary Oathband</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
-          <p>Leader: Kâhl (Warlord, Grimnyr bodyguard, Enhancement: Mercenary Prospector)</p>
-          <p>Leader: Einhyr Champion (Enhancement: Ancestral Crest)</p>
-          <p>Anvil: 10x Einhyr Hearthguard (Volkanite Disintegrators, Exo-armour melee weapons)</p>
+          <p>Leader: Kâhl (Warlord, Enhancement: Mercenary Prospector)</p>
+          <p>Leader: Einhyr Champion</p>
+          <p>Anvil: 10x Einhyr Hearthguard (Volkanite Disintegrators)</p>
           <p>Anvil: Hekaton Land Fortress (Heavy Magna-rail Cannon)</p>
-          <p>Objective Holders: 10x Hearthkyn Warriors (Ion Blasters, HYLas Rotary Cannon)</p>
-          <p>Objective Holders: 10x Hearthkyn Warriors (Ion Blasters, Magna-rail Rifle)</p>
-          <p>Trade Units: 3x Hernkyn Pioneers (Bolt Shotguns)</p>
-          <p>Trade Units: 3x Hernkyn Pioneers (Bolt Shotguns)</p>
-          <p>Anti-Tank: Hekaton Land Fortress (Heavy Magna-rail Cannon)</p>
-          <p>Secondary Scorers: 5x Cthonian Beserks (with Mole Grenade Launcher)<br>
-          Secondary Scorers: 5x Cthonian Beserks (with Mole Grenade Launcher)</p>
+          <p>Objective Holders: 10x Hearthkyn Warriors</p>
+          <p>Trade Units: 3x Hernkyn Pioneers</p>
+          <p>Anti-Tank: Hekaton Land Fortress</p>
+          <p>Secondary Scorers: 5x Cthonian Beserks</p>
           <p>Punchback: 5x Einhyr Hearthguard (Concussion Gauntlets)</p>
-          <p>Transport: Sagitaur (MATR Autocannon)</p>
-          <p>Transport: Sagitaur (MATR Autocannon)</p>
+          <p>Transport: Sagitaur</p>
           
           <p>2. Role Breakdown</p>
           
-          <p>Leader: Kâhl<br>
-          In the Mercenary Oathband, the Kâhl is your resource generator. With the Mercenary Prospector enhancement, his unit gains extra Yield Points (YP) for every enemy unit they wipe out. He stands with a bodyguard unit, handing out Judgement Tokens and ensuring your "war economy" stays in the green.</p>
-          
-          <p>Objective Holders: Hearthkyn Warriors<br>
-          The Kin's "Battleline" is surprisingly sticky. In this detachment, they utilize the Ordered Retreat stratagem to fall back, shoot, and recharge, ensuring they are never truly pinned down on a point. They are the "Objective Secured" backbone of the list.</p>
-          
-          <p>Trade Units: Hernkyn Pioneers<br>
-          The Pioneers are your premier trade pieces. With their Outflanking and 9" Scout moves, they can zip into the enemy's face turn one. They are cheap enough to be sacrificed to "bait out" an opponent's heavy hitter into the open, where your Land Fortresses can see them.</p>
+          <p>Anvil: 10x Einhyr Hearthguard<br>
+          The "Kin-Wall." With T5 and a 2+ Save, they are incredibly tough. Led by a Champion, they gain a 4+ Invulnerable save, effectively anchoring the middle of the board.</p>
           
           <p>Anti-Tank: Hekaton Land Fortress<br>
-          The Heavy Magna-rail Cannon is one of the scariest guns in 2026. With S12+ and Devastating Wounds, it treats enemy tanks like wet paper. In this list, you bring two for redundancy, ensuring that even if one is bracketed, the other can still delete a Knight or a Repulsor Executioner.</p>
-          
-          <p>Secondary Scorers: Cthonian Beserks<br>
-          Usually, Beserks are seen as melee monsters, but in this meta, they are used as "Tactical Scorers." Their Mole Grenade Launchers allow them to contribute chip damage from behind a wall while they perform "Cleanse" or "Deploy Teleport Homers." If anyone tries to stop them, they use their Berserk Fury to fight on death.</p>
-          
-          <p>Punchback: Einhyr Hearthguard (Small Squad)<br>
-          While the big brick of 10 is your main force, this 5-man squad stays in Deep Strike. They are your "Reactionary Hammer." When an enemy commits their Punchback unit (like a Tyranid Haruspex or Ork Squighogs), the Hearthguard drop in and use Ancestral Sentence for full hit rerolls to erase the threat.</p>
-          
-          <p>Anvil: 10x Einhyr Hearthguard (Large Squad)<br>
-          This is the "Kin-Wall." With T5, 2 Wounds, and a 2+ Save, they are incredibly durable. When led by an Einhyr Champion, they gain a 4+ Invulnerable save against high-AP fire. They sit in the middle of the board and effectively say "This is mine now."</p>
-          
-          <p>Transport: Sagitaur<br>
-          The Sagitaur is arguably the best light transport in the game. It allows you to split your 10-man Warrior squads into 5-man teams, giving you more units to spread across the board. Its high mobility and decent firepower make it the perfect "delivery truck" for getting Beserks or small Warrior squads onto contested flanks.</p>
+          The Heavy Magna-rail Cannon treats enemy tanks like wet paper (S12+ and Devastating Wounds). Redundancy is key, ensuring at least one is always operational to delete heavy threats.</p>
           
           <p>Why this list wins:<br>
-          The Leagues of Votann win through Efficiency. By using the Mercenary Oathband detachment, you gain extra AP and Lethal Hits against units on objectives. You aren't trying to out-survive the Necrons or out-horde the Orks; you are trying to out-value them by making every shot count and using your Yield Points to "buy" the specific buffs you need in the most critical turns.<p/>
+          Votann wins through Efficiency. You gain extra AP and Lethal Hits against units on objectives, out-valuing the opponent by making every shot count.</p>
+        </div>
       </article>
-      <article id="Necrons_army" class="border text_color">
-        <p>Necrons: "The Infinite Phalanx"<br>
-          Detachment: Canoptek Court</p>
+      <article id="Necrons_army" class="accordion-item border text_color">
+        <button onclick="toggleNecrons()" class="examples_button">
+          Necrons: "The Infinite Phalanx"
+          <span class="icon" id="necrons_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Canoptek Court</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
           <p>Leader: Illuminor Szeras (Warlord)</p>
           <p>Leader: Technomancer (Enhancement: Dimensional Sanctum)</p>
           <p>Leader: Plasmancer (attached to Immortals)</p>
-          <p>Anvil: 6x Canoptek Wraiths (with Vicious Claws)</p>
-          <p>Anvil: 6x Canoptek Wraiths (with Vicious Claws)</p>
-          <p>Objective Holders: 10x Immortals (Tesla Carbines)</p>
-          <p>Objective Holders: 10x Immortals (Tesla Carbines)</p>
-          <p>Trade Units: 3x Canoptek Scarab Swarms</p>
-          <p>Trade Units: 3x Canoptek Scarab Swarms</p>
-          <p>Anti-Tank: Canoptek Doomstalker</p>
-          <p>Anti-Tank: Canoptek Doomstalker</p>
+          <p>Anvil: 2x 6x Canoptek Wraiths</p>
+          <p>Objective Holders: 2x 10x Immortals (Tesla Carbines)</p>
+          <p>Trade Units: 2x 3x Canoptek Scarab Swarms</p>
+          <p>Anti-Tank: 2x Canoptek Doomstalkers</p>
           <p>Secondary Scorers: 5x Deathmarks</p>
-          <p>Secondary Scorers: 1x Lokhust Heavy Destroyer (Enmitic Exterminator)</p>
           <p>Punchback: C’tan Shard of the Nightbringer</p>
           <p>Transport: Night Scythe</p>
           
           <p>2. Role Breakdown</p>
           
-          <p>Leader: Illuminor Szeras<br>
-          Szeras is the lynchpin. He doesn't just fight; he radiates an aura that increases the Armor Penetration (AP) of nearby Battleline units while reducing the AP of incoming attacks. He turns your Immortals into elite-tier killers while staying remarkably hard to kill himself.</p>
-          
-          <p>Objective Holders: Immortals (with Plasmancer)<br>
-          In the Canoptek Court, these units are terrifying. The Plasmancer lets them score Critical Hits on a 5+, and because they are within the "Power Matrix," they reroll all hits. They walk onto an objective, wipe the current occupants, and then benefit from Szeras's buffs to stay there.</p>
-          
-          <p>Trade Units: Canoptek Scarab Swarms<br>
-          For a handful of points, these are your "speed bumps." You send them forward to "Move Block" an enemy's heavy melee unit (like Ork Meganobz). If they survive, they can explode to deal mortal wounds. Their goal isn't to kill; it's to force the opponent to waste a turn of shooting or combat on "trash."</p>
-          
-          <p>Anti-Tank: Canoptek Doomstalkers<br>
-          In this detachment, Doomstalkers are the gold standard. They gain full hit rerolls while in your Power Matrix. Their Doomsday Blaster (S14, D6+1 Damage) is the perfect tool for cracking open Transports and Battle Tanks from across the board.</p>
-          
-          <p>Secondary Scorers: Deathmarks<br>
-          With Deep Strike and a 36" range, Deathmarks drop into your opponent's backfield. They are there to score "Behind Enemy Lines" or "Cleanse." Their Ethereal Interception also lets them shoot at enemy units arriving from Reserves, making them a great defensive scoring tool.</p>
+          <p>Anvil: Canoptek Wraiths (with Technomancer)<br>
+          This is the most frustrating unit in the 2026 meta. Between a 4+ invulnerable save and the Technomancer’s 5+ Feel No Pain and healing, they can tank an entire army’s fire while sitting on the mid-board.</p>
           
           <p>Punchback: C’tan Shard of the Nightbringer<br>
-          The Nightbringer is your "Reset Button." If your Wraiths are finally starting to crumble or a huge enemy threat (like Ghazghkull or a Land Raider) is rampaging, the Nightbringer moves in. With Gaze of Death and its Scythe, it ignores almost all defensive profiles in the game.</p>
-          
-          <p>Anvil: Canoptek Wraiths (with Technomancer)<br>
-          This is the most frustrating unit to play against in the 2026 meta. Between their 4+ Invulnerable save, 4 Wounds, and the Technomancer providing a 5+ Feel No Pain and healing them every turn, they can sit in the middle of the board and tank an entire army's worth of fire.</p>
-          
-          <p>Transport: Night Scythe<br>
-          The Night Scythe provides the mobility Necrons often lack. Using its Invasion Beam, you can pull a unit of Immortals or even Szeras himself from one side of the board and "beam" them down within 9" of an enemy on the other side, allowing for massive tactical shifts.</p>
+          The "Reset Button." If your front line crumbles or a massive threat like a Land Raider rampages, the Nightbringer moves in. Its Scythe ignores almost all defensive profiles in the game.</p>
           
           <p>Why this list wins:<br>
-          It plays the "Arithmetic of War." Because of Reanimation Protocols, every casualty the opponent fails to finish off is a wasted shot. By the time the opponent manages to chew through 12 Wraiths and a Nightbringer, you have usually already secured a 20-30 point lead on the Primary mission.<p/>
+          It plays the "Arithmetic of War." Because of Reanimation Protocols, every failed kill is a wasted shot. By the time the opponent chews through the Wraiths, you’ve secured a massive lead on points.</p>
+        </div>
       </article>
-      <article id="Orks_army" class="border text_color">
-        <p>
-          <p>Orks: "Da Ironjaw Stampede"<br>
-            Detachment: Bully Boyz</p>
-            
-            <p>1. The Army List (2,000 pts)</p>
-            
-            <p>Leader: Ghazghkull Thraka (Warlord)</p>
-            
-            <p>Leader: Warboss in Mega Armour (Enhancement: Tellyport Blasta)</p>
-            
-            <p>Leader: Beastboss on Squigasaur (Enhancement: Headwoppa’s Killchoppa)</p>
-            
-            <p>Anvil: 6x Meganobz (Twin Killsaws, led by Warboss in Mega Armour)</p>
-            
-            <p>Anvil: 2x Gorkanauts</p>
-            
-            <p>Objective Holders: 10x Gretchin (with Runtherd)</p>
-            
-            <p>Objective Holders: 10x Gretchin (with Runtherd)</p>
-            
-            <p>Trade Units: 5x Stormboyz</p>
-            
-            <p>Trade Units: 5x Stormboyz</p>
-            
-            <p>Anti-Tank: Mozrog Skragbad</p>
-            
-            <p>Secondary Scorers: 10x Kommandos (including Distraction Grot and Bomb Squig)</p>
-            
-            <p>Punchback: 3x Squighog Boyz (with Nob on Smasha Squig)</p>
-            
-            <p>Transport: Trukk</p>
-            
-            <p>Transport: Battlewagon (Arid Cannon, 4x Big Shootas)</p>
-            
-            <p>2. Role Breakdown</p>
-            
-            <p>Leader: Ghazghkull Thraka<br>
-            Ghaz is the centerpiece. In the Bully Boyz detachment, his aura of +1 to Hit and +1 to Wound for friendly Ork units becomes devastating. He doesn't just lead; he turns every "Power Klaw" in his vicinity into a tank-shredding tool.</p>
-            
-            <p>Objective Holders: Gretchin<br>
-            For 40 points, these are the best value units in the game. Their Thievin’ Scavengers rule gives you a 4+ chance to gain a CP every turn they hold an objective. They stay hidden on your home point, generating the resources you need to fuel your offensive stratagems.</p>
-            
-            <p>Trade Units: Stormboyz<br>
-            These Orks have rockets strapped to their backs for a reason. They move 12" and can deep strike. You use them to charge a weak enemy unit or an "Action Monkey" (like Vespids or Inceptors), kill them, and then happily let the Stormboyz be shot off the board. You traded 65 points for your opponent's scoring potential.</p>
-            
-            <p>Anti-Tank: Mozrog Skragbad<br>
-            Mozrog is a heat-seeking missile for vehicles. With his Big Chompa’s Jaws, he deals devastating mortal wounds to vehicles and monsters on the charge. He is T10 with a 4+ invulnerable save and a 4+ Feel No Pain against mortal wounds, making him the ultimate "Anti-Heavy" hunter.</p>
-            
-            <p>Secondary Scorers: Kommandos<br>
-            With Infiltrate and Stealth, Kommandos start the game exactly where they need to be to score "Cleanse" or "Signals." Their "Sneaky Surprise" rule makes them ineligible to be shot by Overwatch, ensuring they get their actions done even if the enemy is watching.</p>
-            
-            <p>Punchback: Squighog Boyz<br>
-            These are your reactionary force. Because they are fast (10" move), they sit behind your main line. If an enemy charges your Gorkanaut or Meganobz, the Squighogs counter-charge. In the Waaagh!, they gain extra attacks and strength, ensuring that whatever touched your front line is promptly eaten.</p>
-            
-            <p>Anvil: Meganobz & Gorkanauts<br>
-            Meganobz: In Bully Boyz, these gain a 4+ Feel No Pain during the Waaagh! turns. They are nearly impossible to kill with standard small arms and require dedicated anti-tank fire to remove.<br>
-            Gorkanauts: These are massive T12 blocks of wounds. They act as "LoS (Line of Sight) Blockers" for your smaller units and provide enough melee pressure that the opponent must deal with them first.</p>
-            
-            <p>Transport: Trukk & Battlewagon<br>
-            Trukk: The "Ork Uber." It delivers the Meganobz into the center of the board safely.<br>
-            Battlewagon: Used specifically to carry Ghazghkull Thraka and his bodyguard. It ensures the Prophet of the Waaagh! reaches the front lines without being picked off by long-range lascannons.</p>
-            
-            <p>Why this list wins:<br>
-            The Bully Boyz detachment rule allows you to call a second Waaagh!. This means you have two full game rounds where your most dangerous units (Meganobz, Warbosses, and Ghaz) have an Invulnerable save, extra attacks, and extra Strength. Most armies can survive one "Green Wave," but very few can survive the second.<p/>
-      </article>
-      <article id="Tau_army" class="border text_color">
-        <p>T’au Empire: "The Blazing Horizon"<br>
-          Detachment: Mont’ka (The Killing Blow)</p>
+
+      <article id="Orks_army" class="accordion-item border text_color">
+        <button onclick="toggleOrks()" class="examples_button">
+          Orks: "Da Ironjaw Stampede"
+          <span class="icon" id="orks_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Bully Boyz</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
-          <p>Leader: Commander in Enforcer Battlesuit (Warlord, 4x Missile Pods)</p>
-          <p>Leader: Cadre Fireblade (attached to Breachers)</p>
-          <p>Leader: Kroot War Shaper (attached to Kroot Carnivores)</p>
-          <p>Anvil: Riptide Battlesuit (Ion Accelerator, Twin Plasma Rifles)</p>
-          <p>Anvil: 3x Broadside Battlesuits (Heavy Rail Rifles)</p>
-          <p>Objective Holders: 10x Breacher Team</p>
-          <p>Objective Holders: 20x Kroot Carnivores</p>
-          <p>Trade Units: 3x Stealth Battlesuits</p>
-          <p>Trade Units: 3x Stealth Battlesuits</p>
-          <p>Anti-Tank: Hammerhead Gunship (Railhead)</p>
-          <p>Secondary Scorers: 5x Vespid Stingwings</p>
-          <p>Secondary Scorers: Pathfinder Team (3x Rail Rifles)</p>
-          <p>Punchback: Crisis Sunforge Team (3x Crisis Suits with Fusion Blasters)</p>
-          <p>Transport: Devilfish</p>
-          <p>Transport: Devilfish</p>
+          <p>Leader: Ghazghkull Thraka (Warlord)</p>
+          <p>Leader: Warboss in Mega Armour</p>
+          <p>Leader: Beastboss on Squigasaur</p>
+          <p>Anvil: 6x Meganobz & 2x Gorkanauts</p>
+          <p>Objective Holders: 2x 10x Gretchin</p>
+          <p>Trade Units: 2x 5x Stormboyz</p>
+          <p>Anti-Tank: Mozrog Skragbad</p>
+          <p>Secondary Scorers: 10x Kommandos</p>
+          <p>Punchback: 3x Squighog Boyz (with Nob on Smasha Squig)</p>
+          <p>Transport: Trukk & Battlewagon</p>
           
           <p>2. Role Breakdown</p>
           
-          <p>Leader: Commander in Enforcer Battlesuit<br>
-          The Enforcer is chosen over the Coldstar for the -1 AP to incoming ranged attacks buff it gives its unit. In 2026, survival is key. This leader makes a unit of Crisis suits or Broadsides significantly harder to shift from the mid-board.</p>
+          <p>Anvil: Meganobz<br>
+          In the Bully Boyz detachment, these gain a 4+ Feel No Pain during Waaagh! turns. They are nearly impossible to kill without dedicated anti-tank fire, holding the center with iron-clad tenacity.</p>
           
-          <p>Objective Holders: Breacher Teams & Kroot<br>
-          Breachers: When paired with a Cadre Fireblade in a Devilfish, they are the most efficient objective-clearers in the game. They jump out, delete whatever is on the point with high-volume S6 shots, and take the objective.<br>
-          Kroot Carnivores: Led by a War Shaper, these provide a "sticky objectives" screen. They are cheap enough that you don't mind losing them, but high enough model count to hold a point through sheer mass.</p>
-          
-          <p>Trade Units: Stealth Battlesuits<br>
-          These are the unsung heroes. With Infiltrate, they start on objectives or in lanes to block enemy movement. Their Homeward Bound and Markerlight keywords make them perfect for guiding your heavy hitters before they inevitably die to return fire.</p>
-          
-          <p>Anti-Tank: Hammerhead Gunship & Broadsides<br>
-          Hammerhead: The "Railhead" is a psychological weapon. It can one-shot most light-to-medium vehicles, forcing your opponent to play cagey.<br>
-          Broadsides: These provide the consistent, heavy long-range pressure. In the Mont'ka detachment, their Rail Rifles gain Lethal Hits in the first three turns, making them terrifying against high-toughness targets like Knights or C'tan.</p>
-          
-          <p>Secondary Scorers: Vespid Stingwings<br>
-          Vespids are the ultimate "action monkeys." Their Deep Strike and ability to go back into reserves at the end of the turn allow them to score "Behind Enemy Lines" or "Deploy Teleport Homers" repeatedly without the opponent being able to catch them.</p>
-          
-          <p>Punchback: Crisis Sunforge Team<br>
-          In the 2026 meta, "Punchback" doesn't have to mean melee. The Sunforge team is kept in Deep Strike. When an enemy tank or elite unit moves onto a center objective, these suits drop in, benefit from full rerolls against vehicles/monsters, and erase the threat in a single shooting phase.</p>
-          
-          <p>Anvil: Riptide Battlesuit<br>
-          The Riptide is your "Distraction Carnifex." With a 2+ save, a 4+ invulnerable save, and the ability to use its Nova Reactor for increased toughness or movement, it sits in the middle of the board. It is too tough to kill easily, but too dangerous to ignore.</p>
-          
-          <p>Transport: Devilfish<br>
-          Essential for the "Breacher-Fish" combo. The Devilfish provides the mobility T’au infantry lacks and acts as a physical wall to protect the squishy pilots inside once they’ve delivered their payload.</p>
+          <p>Anti-Tank: Mozrog Skragbad<br>
+          A heat-seeking missile for vehicles. With a 4+ invulnerable and 4+ FNP against mortals, he hunts down heavy armor and deletes it with mortal wounds on the charge.</p>
           
           <p>Why this list wins:<br>
-          This list exploits the "Guide/Observer" mechanic to effectively play with BS 3+ (or better) across the entire army. By using cheap Kroot and Stealth Suits to control the board early, you force the opponent to expose their valuable units, which are then systematically dismantled by the Broadsides and Riptide.<p/>
+          Double Waaagh!. The Bully Boyz rule allows two full rounds of invulnerable saves and extra attacks. Most armies survive one wave; almost none survive the second.</p>
+        </div>
       </article>
-      <article id="Tyranids_army" class="border text_color">
-        <p>Tyranid Hive Fleet: "The Endless Gulp"<br>
-          Detachment: Invasion Fleet</p>
+
+      <article id="Tau_army" class="accordion-item border text_color">
+        <button onclick="toggleTau()" class="examples_button">
+          T’au Empire: "The Blazing Horizon"
+          <span class="icon" id="tau_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Mont’ka (The Killing Blow)</p>
           
           <p>1. The Army List (2,000 pts)</p>
           
-          <p>Leader: Hive Tyrant (Warlord, Monstrosu Bonesword & Lash Whip, Heavy Venom Cannon)</p>
-          <p>Leader: Neurotyrant (Enhancement: Synaptic Lynchpin)</p>
-          <p>Anvil: 6x Tyranid Warriors with Melee Bio-weapons (Led by Winged Tyranid Prime)</p>
-          <p>Anvil: Maleceptor<br>
-          Objective Holders: 20x Termagants (Fleshborers)<br>
-          Objective Holders: 20x Termagants (Fleshborers)</p>
-          <p>Anti-Tank: Tyrannofex (Rupture Cannon)</p>
-          <p>Anti-Tank: Tyrannofex (Rupture Cannon)</p>
-          <p>Trade Units: 3x Von Ryan's Leapers</p>
-          <p>Trade Units: 3x Von Ryan's Leapers</p>
+          <p>Leader: Commander in Enforcer Battlesuit (Warlord)</p>
+          <p>Leader: Cadre Fireblade & Kroot War Shaper</p>
+          <p>Anvil: Riptide Battlesuit & 3x Broadside Battlesuits</p>
+          <p>Objective Holders: 10x Breacher Team & 20x Kroot Carnivores</p>
+          <p>Trade Units: 2x 3x Stealth Battlesuits</p>
+          <p>Anti-Tank: Hammerhead Gunship (Railhead)</p>
+          <p>Secondary Scorers: 5x Vespid Stingwings</p>
+          <p>Punchback: Crisis Sunforge Team</p>
+          <p>Transport: 2x Devilfish</p>
+          
+          <p>2. Role Breakdown</p>
+          
+          <p>Objective Holders: Breacher Team<br>
+          Paired with a Fireblade in a Devilfish, these are the most efficient objective-clearers in the game. They jump out, delete occupants with S6 shots, and claim the point instantly.</p>
+          
+          <p>Anvil: Riptide Battlesuit<br>
+          The "Distraction Carnifex." With a 2+/4++ profile and Nova Reactor buffs, it sits in the middle of the board. It is far too tough to kill easily, but too dangerous for the enemy to ignore.</p>
+          
+          <p>Why this list wins:<br>
+          Lethal Efficiency. By using the Mont'ka detachment's early-game buffs and the Guide/Observer mechanic, the T'au systematically dismantle an opponent's army by turn three.</p>
+        </div>
+      </article>
+
+      <article id="Tyranids_army" class="accordion-item border text_color">
+        <button onclick="toggleTyranids()" class="examples_button">
+          Tyranids: "The Endless Gulp"
+          <span class="icon" id="tyranids_icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Detachment: Invasion Fleet</p>
+          
+          <p>1. The Army List (2,000 pts)</p>
+          
+          <p>Leader: Hive Tyrant (Warlord) & Neurotyrant</p>
+          <p>Anvil: 6x Tyranid Warriors & Maleceptor</p>
+          <p>Objective Holders: 2x 20x Termagants</p>
+          <p>Anti-Tank: 2x Tyrannofex (Rupture Cannon)</p>
+          <p>Trade Units: 2x 3x Von Ryan's Leapers</p>
           <p>Punchback: Haruspex</p>
-          <p>Secondary Scorers: 1x Ripper Swarm</p>
-          <p>Secondary Scorers: 1x Ripper Swarm</p>
-          <p>Secondary Scorers: 1x Neurolictor</p>
+          <p>Secondary Scorers: 2x Ripper Swarms & Neurolictor</p>
           <p>Transport: Tyrannocyte (Drop Pod)</p>
           
           <p>2. Role Breakdown</p>
           
-          <p>Leader: Hive Tyrant<br>
-          The Hive Tyrant is the tactical brain. Its Will of the Hive Mind ability allows you to use a Stratagem for 0CP, even if you’ve already used it. In a competitive setting, this is almost always used for "Adrenal Surge" to give a unit Critical Hits on a 5+.</p>
-          
-          <p>Objective Holders: Termagant Swarms<br>
-          With 40 bodies on the board, these units utilize their Skittering Horrors ability to move away when an enemy gets close, making them incredibly annoying to charge. They exist to sit on objectives and "soak" damage that should be going to your monsters.</p>
-          
-          <p>Trade Units: Von Ryan’s Leapers<br>
-          With Infiltrate and Fights First, these are your sacrificial pawns. You deploy them aggressively to tie up an enemy unit in their own deployment zone. If they kill a unit and die immediately after, they have successfully "traded up" by buying the rest of your army a turn of movement.</p>
+          <p>Anvil: Maleceptor<br>
+          The ultimate tank. Its 4+ invulnerable save and aura that grants -1 to Hit and Wound in melee makes it an immovable object in the center of the battlefield.</p>
           
           <p>Anti-Tank: Tyrannofex (Rupture Cannon)<br>
-          The "Casino Cannon" is the Tyranids' primary answer to heavy armor. With S18 and D6 + 4 damage, a single shot can cripple a Land Raider. In the 2026 meta, you bring two to mitigate the swingy nature of the dice.</p>
-          
-          <p>Secondary Scorers: Ripper Swarms & Neurolictor<br>
-          Ripper Swarms: Their tiny profile and Deep Strike allow them to land in corners for "Investigate Signals."<br>
-          Neurolictor: Provides the "Battleshock" synergy required to make the army punch harder while remaining Lone Operative, meaning it cannot be shot unless the enemy is within 12".</p>
-          
-          <p>Punchback: Haruspex<br>
-          This is your "Wait and See" unit. You keep it behind a wall near the center. When the enemy charges your Termagants or Maleceptor, the Haruspex charges in the following turn. With 14 attacks at S14 on its shovel-claws, it deletes elite infantry and light tanks effortlessly.</p>
-          
-          <p>Anvil: Maleceptor<br>
-          The Maleceptor is the ultimate tank. It has a 4+ Invulnerable save and its Encephalic Diffusion aura gives enemies -1 to Hit and -1 to Wound in melee. It sits in the middle of the board and dares the opponent to try and move it.</p>
-          
-          <p>Transport: Tyrannocyte<br>
-          Since Tyranids lack traditional tanks, the Tyrannocyte acts as an orbital drop pod. You use it to drop a Haruspex or a big block of Zoanthropes directly into the enemy's backline or onto a contested flank, bypassing the need to walk across open ground.</p>
+          The "Casino Cannon." With S18 and massive damage, a single hit can cripple a Land Raider. Bringing two ensures you overcome the swingy nature of the dice.</p>
           
           <p>Why this list wins:<br>
-          It forces the opponent into a "Target Priority Paradox." If they shoot the Tyrannofexes, the Maleceptors take the center. If they shoot the Maleceptors, the Tyrannofexes delete their tanks. Meanwhile, the Termagants are winning the game on points by simply existing.<p/>
+          The Target Priority Paradox. If the enemy shoots the Tyrannofexes, the Maleceptors take the center. If they shoot the Maleceptors, the tanks die. All while Termagants win on points.</p>
+        </div>
       </article>
     </section>
   </wrapper>
