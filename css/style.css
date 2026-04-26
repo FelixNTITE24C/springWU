@@ -47,7 +47,7 @@ body{
     color: var(--text-primary);
     accent-color: var(--text-accent);
     font-family: VT323;
-    padding-left: 2%;
+    padding: 2%;
 }
 
 /* Menu */
@@ -204,6 +204,55 @@ body{
 }
 /* Factions/Faction Units Roles*/
 
+/* Sliders */
+.slide{
+    display: none;
+}
+
+.slide.active{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.slide img{
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    background: white;
+}
+
+.slide-text{
+    flex: 1;
+}
+
+.slider-arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.arrow-button{
+    background: var(--cta-bg);
+    color: var(--cta-text);
+    box-shadow: var(--shadow-glow);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.arrow-button:hover{
+    background: gray;
+}
+
+/* Regular Content*/
+
 #factions_wrapper{
     display: grid;
     height: auto;
@@ -232,7 +281,14 @@ body{
 }
 
 @media screen and (max-width: 500px) {
+    .slide.active{
+        flex-direction: column;
+    }
 
+    .slide img{
+        width: 100%;
+        height: 200px;
+    }
 }
 
 /* Example Armies*/
