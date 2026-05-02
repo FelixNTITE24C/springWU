@@ -55,12 +55,26 @@ li{
     list-style:none;
 }
 
+#index_body img{
+    height: 20vh;
+}
+
+#roles_wrapper img{
+    height: 20vh;
+}
+
+#factions_wrapper img{
+    height: 20vh;
+}
+
+#examples_wrapper img{
+    height: 20vh;
+}
+
 /* Menu */
 
 @media (min-width: 500px){
-    .menu-button{
-        display: none;
-    }
+
 }
 
 .menu{
@@ -164,11 +178,15 @@ li{
 }
 
 @media (min-width: 500px){
-#index_body{
-    padding-left: 15%;
-    padding-right: 15%;
-    row-gap: 4vh;
-}
+    #index_body{
+        padding-left: 15%;
+        padding-right: 15%;
+        row-gap: 4vh;
+    }
+
+    #index_body img{
+        height: auto;
+    }
 }
 
 @media (max-width: 500px){
@@ -203,7 +221,10 @@ li{
     "roles_s2"
     "roles_s3"
     "roles_s4"
-    "roles_s5";
+    "roles_s5"
+    "roles_s6"
+    "roles_s7"
+    "roles_s8";
     grid-template-columns: 1fr;
     align-content: start;
     row-gap: 25px;
@@ -236,6 +257,30 @@ li{
     grid-area: roles_s2;
 }
 
+#roles_s3{
+    grid-area: roles_s3;    
+}
+
+#roles_s4{
+    grid-area: roles_s4;
+}
+
+#roles_s5{
+    grid-area: roles_s5;    
+}
+
+#roles_s6{
+    grid-area: roles_s6;
+}
+
+#roles_s7{
+    grid-area: roles_s7;    
+}
+
+#roles_s8{
+    grid-area: roles_s8;
+}
+
 @media (min-width: 500px){
     .menu-button{
         display: none;
@@ -243,6 +288,9 @@ li{
     #roles_wrapper{
         padding-left: 15%;
         padding-right: 15%;
+    }
+    #roles_wrapper img{
+        height: 30vh;
     }
 }
 
@@ -370,7 +418,8 @@ li{
 .accordion-body{
     max-height: 0;
     overflow: hidden;
-    transition: 0.5s ease
+    transition: 0.5s ease;
+    padding-left: 1%;
 }
 
 .accordion-item.open .accordion-body{
@@ -439,5 +488,8 @@ li{
     #examples_wrapper{
         padding-left: 15%;
         padding-right: 15%;
+    }
+    #factions_wrapper img{
+        height: 30vh;
     }
 }
