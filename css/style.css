@@ -172,7 +172,22 @@ li{
 }
 
 @media (max-width: 500px){
-
+    #index_body{
+        display: grid;
+        height: auto;
+        width: auto;
+        grid-template-areas: 
+        "index_header"
+        "index_nav"
+        "index_s1"
+        "index_img1"
+        "index_s2"
+        "index_img2";
+        grid-template-columns: 1fr;
+        align-content: start;
+        row-gap: 2.5vh;
+        column-gap: 25px;
+    }
 }
 /* Roles/Unit Role Explinations*/
 
