@@ -12,18 +12,25 @@
 
     <nav class="menu">
       <ul>
-      <li><a href="http://127.0.0.1:5501/index.html">Home</a></li>
-      <li><a href="http://127.0.0.1:5501/roles.html">Roles</a></li>
-      <li><a href="http://127.0.0.1:5501/examples.html">Example Armies</a></li>
+        <li><a href="http://127.0.0.1:5501/index.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5501/roles.html">Roles</a></li>
+        <li><a href="http://127.0.0.1:5501/examples.html">Example Armies</a></li>
+      </ul>
+      <ul>
+        <li class="text_color">Example Armies</li>
+        <li><a href="#space_marines_units">Space Marines</a></li>
+        <li><a href="#imperium_units">Imperium</a></li>
+        <li><a href="#chaos_units">Chaos</a></li>
+        <li><a href="#xenos_units">Xenos</a></li>
       </ul>
   </nav>
 
   <div class="fade-layer" onclick="showMenu()"></div>
       
       <div class="menu-button" onclick="showMenu()">
-        <img src="/img/Hamburger button.png" class="material-icons" class="border text_color"></img>
+        <img src="/img/necrons icon.png" class="material-icons border text_color" alt="necron menu icon">
       </div>
-  <wrapper id="factions_wrapper">
+  <div id="factions_wrapper">
     <header class="border text_color" id="factions_header">
       <a href="index.html">
         <h1 id="roles_header">Trazyn's Exhibit of Commanders</h1>
@@ -37,11 +44,11 @@
       <a href="http://127.0.0.1:5501/examples.html">Example Armies</a>
      </nav>
     
-    <h2 class="text_color sub_title">- Space Marines -</h2>
+    <h2 class="text_color sub_title" id="space_marines_units">- Space Marines -</h2>
 
     <article id="Space_Marines" class="border text_color">
       <h2>Space Marines</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="space-marines-slider">
         <div class="slide active">
           <p>Leader: Captain (All variants)<br>
@@ -83,7 +90,7 @@
     </article>
     <article id="Black_Templars" class="border text_color">
       <h2>Black Templars</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="black-templars-slider">
         <div class="slide active">
           <p>Leader: High Marshal Helbrecht<br>
@@ -121,7 +128,7 @@
     </article>
     <article id="Blood_Angels" class="border text_color">
       <h2>Blood Angels</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="blood-angels-slider">
         <div class="slide active">
           <p>Leader: Commander Dante<br>
@@ -159,7 +166,7 @@
     </article>
     <article id="Dark_Angels" class="border text_color">
       <h2>Dark Angels</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="dark-angels-slider">
         <div class="slide active">
           <p>Leader: Azrael<br>
@@ -201,7 +208,7 @@
     </article>
     <article id="Grey_Knights" class="border text_color">
       <h2>Grey Knight</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="grey-knights-slider">
         <div class="slide active">
           <p>Leader: Kaldor Draigo<br>
@@ -243,7 +250,7 @@
     </article>
     <article id="Space_Wolves" class="border text_color">
       <h2>Space Wolves</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="space-wolves-slider">
         <div class="slide active">
           <p>Leader: Logan Grimnar on Stormrider<br>
@@ -284,11 +291,11 @@
       </div>
     </article>
 
-    <h2 class="text_color sub_title">- Imperium -</h2>
+    <h2 class="text_color sub_title" id="imperium_units">- Imperium -</h2>
 
     <article id="Sororitas" class="border text_color">
       <h2>Adepta Sororitas</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="sororitas-slider">
         <div class="slide active">
           <p>Leader: Morvenn Vahl<br>
@@ -330,7 +337,7 @@
     </article>
     <article id="Custodes" class="border text_color">
       <h2>Adeptus Custodes</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="custodes-slider">
         <div class="slide active">
           <p>Leader: Shield-Captain<br>
@@ -372,7 +379,7 @@
     </article>
     <article id="Mechanicus" class="border text_color">
       <h2>Adeptus Mechanicus</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="mechanicus-slider">
         <div class="slide active">
           <p>Leader: Tech-Priest Manipulus<br>
@@ -414,7 +421,7 @@
     </article>
     <article id="Astra_Militarum" class="border text_color">
       <h2>Astra Militarum</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="astra-militarum-slider">
         <div class="slide active">
           <p>Leader: Lord Solar Leontus<br>
@@ -456,7 +463,7 @@
     </article>
     <article id="Imperial_Agents" class="border text_color">
       <h2>Imperial Agents</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="imperial-agents-slider">
         <div class="slide active">
           <p>Leader: Inquisitor Coteaz<br>
@@ -498,7 +505,7 @@
     </article>
     <article id="Imperial_Knights" class="border text_color">
       <h2>Imperial Knights</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="imperial-knights-slider">
         <div class="slide active">
           <p>Leader: Canis Rex<br>
@@ -539,11 +546,11 @@
       </div>
     </article>
 
-    <h2 class="text_color sub_title">- Chaos -</h2>
+    <h2 class="text_color sub_title" id="chaos_units">- Chaos -</h2>
 
     <article id="Chaos_Daemons" class="border text_color">
       <h2>Chaos Daemons</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="chaos-demons-slider">
         <div class="slide active">
           <p>Leader: Be'lakor<br>
@@ -585,7 +592,7 @@
     </article>
     <article id="Chaos_Space_Marines" class="border text_color">
       <h2>Chaos Space Marines</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="chaos-space-marines-slider">
         <div class="slide active">
           <p>Leader: Abaddon the Despoiler<br>
@@ -627,7 +634,7 @@
     </article>
     <article id="Death_Guard" class="border text_color">
       <h2>Death Guard</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="death-guard-slider">
         <div class="slide active">
           <p>Leader: Typhus<br>
@@ -669,7 +676,7 @@
     </article>
     <article id="Emperors_Children" class="border text_color">
       <h2>Emperor's Children</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="emperors-children-slider">
         <div class="slide active">
           <p>Leader: Lucius the Eternal<br>
@@ -711,7 +718,7 @@
     </article>
     <article id="Thousand_Sons" class="border text_color">
       <h2>Thousand Sons</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="thousand-sons-slider">
         <div class="slide active">
           <p>Leader: Ahriman<br>
@@ -753,7 +760,7 @@
     </article>
     <article id="World_Eaters" class="border text_color">
       <h2>World Eaters</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="world-eaters-slider">
         <div class="slide active">
           <p>Leader: Lord Invocatus<br>
@@ -793,10 +800,12 @@
         <button class="arrow-button" onClick="moveWorldEaters(1)">→</button>
       </div>
     </article>
-    <h2 class="text_color sub_title">- Xenos -</h2>
+
+    <h2 class="text_color sub_title" id="xenos_units">- Xenos -</h2>
+
     <article id="Aeldari" class="border text_color">
       <h2>Aeldari</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="aeldari-slider">
         <div class="slide active">
           <p>Leader: Farseer<br>
@@ -838,7 +847,7 @@
     </article>
     <article id="Genestealer_Cults" class="border text_color">
       <h2>Genestealer Cults</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="genestealer-cults-slider">
         <div class="slide active">
           <p>Leader: Primus<br>
@@ -880,7 +889,7 @@
     </article>
     <article id="Votann" class="border text_color">
       <h2>Leagues of Votann</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="votann-slider">
         <div class="slide active">
           <p>Leader: Kâhl<br>
@@ -922,7 +931,7 @@
     </article>
     <article id="Necrons" class="border text_color">
       <h2>Necrons</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="necrons-slider">
         <div class="slide active">
           <p>Leader: Overlord with Translocation Shroud<br>
@@ -964,7 +973,7 @@
     </article>
     <article id="Orks" class="border text_color">
       <h2>Orks</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="orks-slider">
         <div class="slide active">
           <p>Leader: Ghazghkull Thraka<br>
@@ -1006,7 +1015,7 @@
     </article>
     <article id="Tau" class="border text_color">
       <h2>T'au Empire</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="tau-slider">
         <div class="slide active">
           <p>Leader: Commander Shadowsun<br>
@@ -1048,7 +1057,7 @@
     </article>
     <article id="Tyranids" class="border text_color">
       <h2>Tyranids</h2>
-      <img class="border text_color" src="/img/car_scare.jpg">
+      <img class="border text_color" src="/img/car_scare.jpg" alt="image">
       <div class="slider" id="tyranids-slider">
         <div class="slide active">
           <p>Leader: Hive Tyrant<br>
@@ -1090,6 +1099,6 @@
     </article>
     
     <script src="js/main.js"></script> 
-  </wrapper>
+  </div>
 </body>
 </html>
